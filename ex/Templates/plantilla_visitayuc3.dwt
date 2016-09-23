@@ -1,0 +1,65 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+<!-- TemplateBeginEditable name="doctitle" -->
+<title>::: Visita Yucat&aacute;n :::</title>
+<meta name="keywords" content="merida, yucatan, mérida, yucatán, sitios interés, interesting sites, mexico, méxico, historia, history, cultura maya, mayan culture, tours, destinos turísticos, turistic destinations" />
+<meta name="description" content="Visita Yucatán." />
+<meta name="robots" content="all" />
+<meta http-equiv="Content-Language" content="es-mx" />
+<meta name="author" content="http://www.adcompublicidad.com.mx" />
+<!-- TemplateEndEditable -->
+<!-- TemplateBeginEditable name="head" -->
+<!-- TemplateEndEditable -->
+<link href="../estilos/estilos_vy3.css" rel="stylesheet" type="text/css" />
+</head>
+
+<body>
+	<noscript><iframe src="//www.googletagmanager.com/ns.html?id=GTM-KRFDQV"
+height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+'//www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+})(window,document,'script','dataLayer','GTM-KRFDQV');</script>
+
+	<div id="global">
+		<div id="cuerpo"><!-- TemplateBeginEditable name="central" -->central<!-- TemplateEndEditable --></div>
+	</div>
+	<div id="piebg">
+		<div id="piepag">
+			<div id="columna1">
+				<div id="espacio1">&nbsp;</div>
+				<ul>
+					<li>&nbsp;&nbsp;&nbsp;<a href="../index.html" target="_self">Inicio</a></li>
+					<li>&nbsp;&nbsp;&nbsp;<a href="../tours.html" target="_self">Tours</a></li>
+					<li>&nbsp;&nbsp;&nbsp;<a href="../paquetes.html" target="_self">Paquetes</a></li>
+					<li>&nbsp;&nbsp;&nbsp;<a href="../galeria.html" target="_self">Galer&iacute;a</a></li>
+					<li>&nbsp;&nbsp;&nbsp;<a href="../recomendaciones.html" target="_self">Recomendaciones para viajar</a></li>
+				</ul>
+			</div>
+			<div id="columna1">
+				<div id="espacio1">&nbsp;</div>
+				<ul>
+					<li>&nbsp;&nbsp;&nbsp;<a href="../historia.html" target="_self">Historia</a></li>
+					<li>&nbsp;&nbsp;&nbsp;<a href="../tradcom.html" target="_self">Costumbres y tradiciones</a> </li>
+					<li>&nbsp;&nbsp;&nbsp;<a href="../ubicacion.html" target="_self">Ubicaci&oacute;n</a></li>
+					<li>&nbsp;&nbsp;&nbsp;<a href="../contacto.php" target="_self">Contacto</a></li>
+					<li>&nbsp;&nbsp;&nbsp;<a href="../privacidad.html" target="_self">Pol&iacute;tica de privacidad</a></li>
+					<li>&nbsp;&nbsp;&nbsp;<a href="../pgenerales.html" target="_self">Pol&iacute;ticas generales</a></li>
+				</ul>
+			</div>
+			<div id="columna1">
+				<div id="adcom">
+					<div id="yuctravel"></div>
+					<p id="texto1">VISITA YUCATAN. COM / Todos los derechos reservados 2013</p>
+					<p id="texto2">Desarrollado por </p><img src="../imagenes/logo_adcom.jpg" alt="" border="0" usemap="#Map" />
+<map name="Map" id="Map"><area shape="rect" coords="4,3,80,24" href="http://www.paredespublicidad.com/" target="_blank" alt="" />
+</map>
+				</div>
+			</div>
+		</div>
+	</div>
+</body>
+</html>

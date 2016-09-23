@@ -1,0 +1,340 @@
+@import url("estilos-predeterminados.css");
+@import url("efectos.css");
+
+.transpazul{
+	background: rgba(0,176,199,0.5);
+}
+.transpverde{
+	background: rgba(0,146,63,0.5);
+}
+.transpamarillo{
+	background: rgba(233,172, 26, 0.5);
+}
+.transpmorado{
+	background: rgba(230,0,148, 0.5);
+}
+.transprojo{
+	background: rgba(209,36,33, 0.5);
+}
+header{
+    background: url("../imagenesnew/header.png") top left;
+    width: 100%;
+    height: 156px;
+    position: relative;
+    z-index: 1;
+}
+#logo{
+    width: 205px;
+    margin: 15px 0 0 35px;	
+}
+#navpc{
+	margin-top: 40px;
+}
+#navpc li{
+	float: left;    
+    padding: 0 15px;
+    position: relative;
+}
+#navpc li a{
+	color: #fff;
+}
+#navpc li.submenu:hover ul{
+	display: block;
+}
+#navpc li ul{
+	display: none;
+    position: absolute;
+    right: 0;
+    background: #E9AC1A;
+    width: 170%;
+    height: auto;
+}
+#navpc li ul li{
+	float: left;
+    clear: left;
+    width: 100%;
+    text-align: center;
+    height: 40px;
+    border-bottom: 1px solid #fff;	
+    display: table;
+}
+#navpc li ul li:hover{
+	background: #006E7D;
+}
+#navpc li ul li:last-child{
+    border: none;
+}
+#navpc li ul li a{
+	display: table-cell;
+	vertical-align: middle;
+}
+.cajabandera{
+    background: url("../imagenesnew/select.png") 100% -1px no-repeat;
+    width: 63px;
+    height: 21px;
+    border: 1px solid #ccc;
+    border-radius: 0 7px 8px 0;
+}
+.banderita img{
+	width: 34px;
+}
+
+
+#contenido{
+    margin-top: -60px;
+    padding-top: 40px;
+    z-index: 0;
+    position: relative;
+}
+.contenido-home{
+    background: url("../imagenesnew/fondo.jpg") top center no-repeat;
+    height: 1083px;
+}
+#cajitaspromo{
+    width: 90%;
+    position: relative;
+    left: 50%;
+    margin-left: -45%;
+    text-align: center;	
+}
+.cajitasdepromo{
+    display: inline-block;
+    width: 23%;
+    margin: 5px;
+    min-width: 250px;	
+}
+.descripcionpromo{
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;	
+}
+.nombrepromo{
+    float: left;
+    height: 90px;
+    font-size: 30px;
+    color: #fff;
+    margin: 14px 0 0 28px;
+    text-shadow: 1px 3px 5px #000;
+    text-align: left;	
+}
+.titulopromocion{
+    margin: 20px 0 0 0;
+    padding: 3px 0;
+    color: #fff;
+    font-size: 20px;	
+}
+.preciopaquete{
+    color: #fff;
+    font-weight: bold;
+    font-size: 39px;
+    margin-top: -12px;
+    float: left;	
+}
+.moneda{
+    color: #fff;
+    font-weight: bold;
+    font-size: 21px;
+    float: left;
+    letter-spacing: -2px;	
+}
+.desde{
+    color: #fff;
+    font-weight: bold;
+    font-size: 21px;	
+}
+.elpreciopaquete{
+    width: 190px;
+    position: absolute;
+    bottom: 10px;
+    right: 10px;
+    background: rgba(0,0,0,0.5);
+    padding: 2px 9px;
+}
+
+
+footer{
+	background: url("../imagenes/footer.jpg") top center no-repeat;
+	height: 415px;
+	width: 100%;
+	float: left;
+	position: relative;
+}
+.columnaFooter{
+	float: left;
+	margin: 44px 20px 0 0;
+	width: 175px;
+	height: 325px;	
+}
+.columnaimagenes{
+	text-align: center;
+	position: relative;
+}
+#titleidioma{
+	margin-top: 10px;
+}
+.columnaFooter h2{
+	color: #fff;
+	font-weight: normal;
+	font-size: 21px;
+	width: 100%;	
+}
+.separadorFooter{
+	float: left;
+	color: #fff;
+	height: 1px;
+	width: 100%;
+	background: #fff;
+	margin: 2px 0 10px 0;	
+}
+.capital{
+	text-transform: capitalize;
+}
+.columnaFooter a{
+	color: #fff;
+}
+.logosocial{
+	float: left;
+	clear: left;
+	margin-bottom: 8px;
+}
+.tituloSocial{
+	float: left;
+	color: #fff;
+	font-weight: normal;
+	margin: 11px 0 0 10px;	
+}
+#moneda, #idioma{
+	padding: 5px;
+	color: #666;
+	width: 100%;
+	box-sizing: border-box;	
+}
+.columnaFooter ul{
+	float: left;
+	width: 100%;	
+}
+.columnaFooter ul li{
+	color: #fff;
+	list-style: none;
+	min-height: 28px;
+	font-size: 15px;
+}
+
+.mask{
+    width: 100%;
+    height: 100%;
+    z-index: 9999;
+    top: 0;
+    left: 0;	
+}
+.sellos {
+    margin-bottom: 15px;
+}
+.portamenumovil {
+    border: 1px solid #008698;
+    top: 15px;
+    right: 20px;
+    position: absolute;
+    z-index: 9999999;
+}
+.rayamenu {
+    border: 1px solid #008698;
+}
+#menumovil ul li ul li{
+	border: none;
+}
+
+/*tamaño maximo 1585*/
+@media screen and (max-width: 599px) {
+	.contenido-home{
+	    min-height: 1083px;
+	    background-size: cover;	
+	    height: auto;	
+	}
+	.moviloculto{
+		display: none;
+	}
+	.columnaFooter {
+	    margin: 55px 20px 0 0;
+	    width: 44%;
+	    height: auto;
+	}	
+	.columnaimagenes {
+	    width: 100% !important;
+	    margin-top: 33px !important;
+	}
+	.center {
+	    width: 98%;
+	    margin-left: -49%;
+	}
+	.columnaFooter ul li {
+	    font-size: 12px;
+	    min-height: 19px;
+	}	
+	.view-sixth .mask{
+		background: none;
+		opacity: 1;
+	}
+	.nombrepromo{
+	    font-size: 20px;
+	    height: 52px;	
+        transform: scale(1);
+        opacity: 1;
+	}
+	.titulopromocion{
+		margin-top: 0px;
+		font-size: 15px;
+	}
+	.preciopaquete{
+		font-size: 32px;
+	}				
+}
+@media screen and (min-width: 600px) and (max-width: 1363px) {
+	.nombrepromo{
+	    font-size: 20px;
+	    height: 52px;	
+	}
+	.titulopromocion{
+		margin-top: 0px;
+		font-size: 15px;
+	}
+	.preciopaquete{
+		font-size: 32px;
+	}
+}
+@media screen and (min-width: 600px) and (max-width: 780px) {
+	.view-sixth .mask{
+		background: none;
+		opacity: 1;
+	}
+	.nombrepromo{
+	    font-size: 20px;
+	    height: 52px;	
+        transform: scale(1);
+        opacity: 1;
+	}
+	.titulopromocion{
+		margin-top: 0px;
+		font-size: 15px;
+	}
+	.preciopaquete{
+		font-size: 32px;
+	}
+	.portamenumovil{
+		border: 1px solid #000;
+	}
+	.rayamenu{
+		border: 1px solid #000;
+	}
+}
+@media screen and (min-width: 1364px) and (max-width: 1585px) {
+	.nombrepromo{
+	    font-size: 25px;
+	    height: 61px;	
+	}
+	.titulopromocion{
+		margin-top: 10px;
+	}
+}
+

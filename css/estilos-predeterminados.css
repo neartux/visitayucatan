@@ -1,0 +1,254 @@
+/*GENERALES*/
+body {	
+	overflow-x: hidden;
+	font-size: 15px;	
+}
+button{
+	border: none;
+	cursor: pointer;
+	outline: none;
+}
+.letramenu{
+	font-size: 16px;	
+}
+* {
+	font-family: "Century Gothic";
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+img {
+	border: none;
+}
+input, textarea {
+	outline: 0;
+	color: #666;
+	height: 23px;
+	box-sizing: content-box;
+}
+select{
+	height: 28px;
+	box-sizing: content-box;
+}
+textarea {
+	resize: none;	
+	color: #666;
+}
+a {
+	text-decoration: none;
+}
+li{
+	list-style: none;
+}
+.center{
+	width: 80%;
+	position: relative;
+	left: 50%;
+	margin-left: -40%;
+	float: left;
+}
+
+/*ESTILOS PREDETERMINADOS*/
+.italica{
+	font-style: italic;
+}
+.padding5{
+	padding: 5px;
+}
+.padding10{
+	padding: 5px;
+}
+.padding15{
+	padding: 5px;
+}
+.mtop{
+	margin-top: 10px;
+}
+.mtop2{
+	margin-top: 20px;
+}
+.mbottom{
+	margin-bottom: 10px;
+}
+.mbottom2{
+	margin-bottom: 20px;
+}
+.mright{
+	margin-right: 10px;
+}
+.mleft{
+	margin-left: 10px;
+}
+.oculto {
+	display: none;
+}
+.alerta {
+	background: #FFFFA5 !important;
+}
+.clear{
+	clear: left;
+}
+.full{
+	width: 100%;
+}
+.casifull{
+	width: 90%;
+}
+.middle{
+	width: 48%;
+}
+.terceraparte{
+	width: 33.33%;	
+}
+.dostercios{
+	width: 65%;
+}
+.cuarta{
+	width: 25%;
+}
+.fullheight{
+	height: 100%;
+}
+.imgresponsive{
+	max-width: 100%;
+}
+.left{
+	float: left;
+}
+.right{
+	float: right;
+}
+.relative{
+	position: relative;	
+}
+.absolute{
+	position: absolute;
+}
+.fixed{
+	position: fixed;
+}
+.table{
+	display: table;
+}
+.tablecell{
+	display: table-cell;
+	vertical-align: middle;
+}
+.tablecelldown{
+	display: table-cell;
+	vertical-align: bottom;	
+}
+.inline{
+	display: inline-block;
+}
+.cleft{
+	clear: left;
+}
+.cright{
+	clear: right;
+}
+.textcenter{
+	text-align: center;
+}
+.textleft{
+	text-align: left;
+}
+.textright{
+	text-align: right;
+}
+.textjustify{
+	text-align: justify;
+}
+.fontnormal{
+	font-weight: normal;
+}
+.bold{
+	font-weight: bold;
+}
+.pointer{
+	cursor: pointer;
+}
+.oscuro{
+	background: rgba(0,0,0,0.5);
+}
+.underline{
+	text-decoration: underline;
+}
+.letrablanca{
+	color: #fff;
+}
+.fondoblanco{
+	background: #fff;
+}
+.letranegra{
+	color: #000;
+}
+.fondonegro{
+	background: #000;
+}
+.pcoculto{
+	display: none;
+}
+.mayusculas{
+	text-transform: uppercase;	
+}
+
+/*MENU PARA MOVILES*/
+.portamenumovil{    
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    border-radius: 8px;	
+}
+.rayamenu{
+    position: relative;
+    float: left;
+    width: 80%;
+    margin-bottom: 4px;
+    left: 50%;
+    margin-left: -40%;
+    clear: left;	
+}
+.rayamenu:first-child{
+	margin-top: 10px;
+}
+
+#menumovil{
+    position: absolute;
+    z-index: 999999999;
+    width: 100%;
+    background: #008B9E;
+    padding: 0 12px;
+    height: auto;
+    padding-bottom: 5px;	
+    border-top: 5px solid #D12420;	
+}
+#menumovil ul{    
+    float: left;
+    width: 100%;
+    height: auto;	
+}
+#menumovil ul li{
+    float: left;
+    width: 100%;
+    height: 40px;
+    border-bottom: 1px solid #ccc;
+}
+
+#menumovil ul li:last-child{
+    border: none;
+}
+
+
+/*PANTALLA MINIMA SOPORTABLE 780PX*/
+@media (max-width: 780px) {
+	.celoculto{
+		display: none;
+	}
+	.fullcell{
+		width: 100%;
+	}
+	.pcoculto{
+		display: block;
+	}	
+}

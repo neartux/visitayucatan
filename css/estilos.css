@@ -1,0 +1,2161 @@
+@import url("efectos.css");
+body {
+	font-family: Arial;
+	overflow-x: hidden;
+	font-size: 13px;
+}
+button{
+	border: none;
+	cursor: pointer;
+	outline: none;
+}
+.oswaldo{
+	font-family: oswald, Arial;
+}
+* {
+	margin: 0;
+	padding: 0;
+}
+img {
+	border: none;
+}
+input, textarea {
+	outline: none;
+}
+textarea {
+	resize: none;
+}
+a {
+	text-decoration: none;
+}
+.oculto {
+	display: none;
+}
+.alerta {
+	background: #FFFFA5;
+}
+.clear{
+	clear: left;
+}
+.clearheight{
+	width: 100%;
+	height: 20px;
+}
+div, header, section{
+	box-sizing: border-box;
+}
+.full{
+	width: 100%;
+}
+.textcenter{
+	text-align: center;
+}
+.mtop{
+	margin-top: 5px;
+}
+.left{
+	float: left;
+}
+header{
+	background: url("../imagenes/header.png")top center no-repeat;
+	height: 162px;
+	width: 100%;
+	float: left;
+	position: relative;
+	z-index: 999;	
+}
+.center{
+	width: 980px;
+	z-index: 100;
+	float: left;
+	position: relative;
+	left: 50%;
+	margin-left: -490px;
+	
+}
+#logo{
+	float: left;
+	margin: 18px 0 0 32px;	
+}
+
+nav{
+	float: left;
+	width: 649px;
+	margin: 0 0 0 35px;	
+	margin-top: 51px;
+	font-family: 'Oswald', Arial;
+	font-weight: 400; 
+	font-size: 16px;
+}
+nav ul{
+	float: left;
+	width: 100%;
+	margin-top: -30px;
+	height: 55px;
+}
+nav ul li{
+	float: left;
+	list-style: none;
+	text-transform: uppercase;
+	width: 90px;
+	text-align: center;
+	height: 100%;
+	display: table;	
+	position: relative;
+}
+/**/
+nav li ul{
+    display: none;
+    z-index: 99999;
+    width: 100%;
+    position: absolute;
+    right: 0;
+    top: 66px;
+    height: 126px;
+    margin: 0;
+    background: #fff;	
+    border-left: 1px solid #00B0C7;
+    border-right: 1px solid #00B0C7;
+    border-bottom: 1px solid #00B0C7;
+}
+nav ul li ul li{
+    height: 40px;
+}
+nav ul li ul li a{
+    vertical-align: middle;	
+}
+nav ul li ul li:hover{
+	background: #00B0C7;
+}
+
+/**/
+.navCurrent{
+	border-bottom: 1px solid #D12420;
+}
+nav ul li a, nav ul li span{
+	color: #000;
+	display: table-cell;
+	cursor: pointer;
+	vertical-align: bottom;
+}
+#slide{
+	float: left;
+	position: relative;
+	width: 100%;
+	height: 382px;
+	margin-top: -46px;
+}
+.imgslide{
+	position: absolute;
+	/*left: 50%;
+	margin-left: -960px;*/
+}
+#motor{
+	display: none;
+	position: relative;
+	/*background: url("../imagenes/busqueda.png") no-repeat;*/
+	background-color: #00B0C7;
+	width: 408px;
+	height: 385px;
+}
+.firstLabel{
+	margin-top: 10px !important;
+}
+#motor label{
+	color: #fff;
+	float: left;
+	margin: 0px 0 0 24px;
+	font-size: 22px;	
+}
+#motor input{
+	float: left;
+	width: 360px;
+	margin-left: 24px;	
+	height: 32px;
+}
+#aventura{
+	margin-bottom: 20px;
+	border: none;
+	float: left;
+	clear: left;
+	margin-left: 23px;
+	height: 32px;
+	width: 90%;
+}
+#motor .grupo{
+	float: left;
+	width: 170px;
+	margin-left: 24px;
+	margin-bottom: 20px;
+}
+#motor .grupo label{
+	margin-left: 0;	
+}
+#motor .grupo input{
+	width: 100%;
+	margin-left: 0;
+	border: none;
+	padding-left: 40px;
+	color: #666;
+}
+#llegada{
+	background: url("../imagenes/llegada.jpg") no-repeat #fff;
+}
+.compartir{
+    float: left;    	
+}
+.compartirlistahoteles{
+    float: left;
+    margin: 5px 0 0 12px;
+}
+#salida{
+	background: url("../imagenes/salida.jpg") no-repeat #fff;
+}
+#adultos, #adultosb, #adultosc{
+	background: url("../imagenes/adultos.jpg") no-repeat #fff;
+	height: 32px;
+	float: left;
+	clear: left;
+	width: 98px;	
+	padding-left: 40px;
+	border: none;
+}
+#menores, #menoresb, #menoresc{
+	background: url("../imagenes/menores.jpg") no-repeat #fff;
+	height: 32px;
+	border: none;
+	float: left;
+	clear: left;
+	width: 98px;	
+	padding-left: 40px;
+}
+#encuentra{
+	background: url("../imagenes/encuentra1.jpg") no-repeat;
+	height: 130px;
+	width: 132px;
+	float: right;
+	margin: 0px 19px 0 0;	
+}
+#encuentra:hover{
+	background: url("../imagenes/encuentra2.jpg") no-repeat;
+	
+}
+#contenido{
+	float: left;
+	width: 100%;
+	background: url("../imagenes/fondo-estatico.jpg") top center;
+	margin-top: -48px;
+	position: relative;
+}
+#contenidoLeft{
+	float: left;
+	position: relative;
+	width: 736px;	
+}
+.leftFull{
+	width: 100% !important;
+	margin-top: 20px;
+}
+.registro{
+	width: 100%;
+	float: left;
+	height: 200px;
+	margin: 10px 0;	
+}
+.registrofirst{
+	margin-top: 25px !important;
+}
+.headerRegistro{
+	float: left;
+	color: #fff;
+	height: 39px;
+	width: 100%;
+	background: #E60094;	
+}
+.headerRegistroTour{
+	background: #00B0C7 !important;
+}
+.headerRegistroHoteles{
+	background: #D12420 !important;
+}
+.fotoRegistro{
+	float: left;
+	width: 227px;
+	overflow: hidden;
+	height: 151px;	
+}
+.fotoRegistro img{
+	width: 100%;
+}
+.infoRegistro{
+	float: left;
+	position: relative;
+	width: 505px;	
+}
+.faceRegistro{
+	float: left;
+	margin-left: 10px;
+}
+.estrellaRegistro{
+	
+}
+.stars{
+	float: left;
+	clear: left;
+	margin: 10px 0 0 10px;	
+}
+.stars h4{
+	float: left;
+	clear: left;
+}
+.textoRegistro{
+	float: left;
+	margin-left: 12px;
+	width: 345px;
+	clear: left;
+	height: 110px;
+	margin-top: 5px;	
+}
+.precioRegistro{
+	background: #E9AC1A;
+	color: #fff;
+	width: 150px;
+	position: absolute;
+	top: 0;
+	right: -4px;
+	height: 90px;
+}
+.precioRegistro a{
+	color: #fff;
+}
+.precioTour{
+	height: 93px;
+}
+.precioTour span{
+	width: 100px;
+	margin-top: 0px !important;	
+}
+.precioTour h2{
+	margin-top: 0px !important;
+	margin-bottom: 10px !important;
+	clear: left;
+}
+.precioRegistro span{
+	float: left;
+	margin: 10px 0 0 7px;
+}
+.precioRegistro h2{
+	float: left;
+	margin: 4px 0 0 8px;
+}
+.tituloPaquete{
+	float: left;
+	width: 285px;
+	margin-left: 10px;
+	height: 38px;
+	box-sizing: border-box;
+	margin-top: 0px;
+	font-weight: 300;
+	font-size: 24px;
+}
+.tituloCircuito{
+	float: left;
+	margin-top: 10px;
+	margin-left: 10px;
+	font-weight: normal;
+	font-size: 17px;	
+}
+#contenidoRight{
+	float: right;
+	width: 228px;
+}
+footer{
+	background: url("../imagenes/footer.jpg") top center no-repeat;
+	height: 415px;
+	width: 100%;
+	float: left;
+	position: relative;
+}
+.columnaFooter{
+	float: left;
+	margin: 44px 20px 0 0;
+	width: 175px;
+	height: 325px;	
+}
+.columnaimagenes{
+	text-align: center;
+	position: relative;
+}
+#titleidioma{
+	margin-top: 10px;
+}
+.columnaFooter h2{
+	color: #fff;
+	font-weight: normal;
+	font-size: 21px;
+	width: 100%;	
+}
+.separadorFooter{
+	float: left;
+	color: #fff;
+	height: 1px;
+	width: 100%;
+	background: #fff;
+	margin: 2px 0 10px 0;	
+}
+.capital{
+	text-transform: capitalize;
+}
+.columnaFooter a{
+	color: #fff;
+}
+.logosocial{
+	float: left;
+	clear: left;
+	margin-bottom: 8px;
+}
+.tituloSocial{
+	float: left;
+	color: #fff;
+	font-weight: normal;
+	margin: 11px 0 0 10px;	
+}
+#moneda, #idioma{
+	padding: 5px;
+	color: #666;
+	width: 100%;
+	box-sizing: border-box;	
+}
+.columnaFooter ul{
+	float: left;
+	width: 100%;	
+}
+.columnaFooter ul li{
+	color: #fff;
+	list-style: none;
+	min-height: 28px;
+	font-size: 15px;
+}
+.banner{
+	margin-bottom: 25px;
+	max-width: 100%;
+}
+.bannerfirst{
+	margin-top: 25px;
+}
+.divisorRegistro{
+	float: left;
+	margin-top: -1px;	
+}
+#sombraslide{
+	float: left;
+	width: 100%;
+	position: relative;
+	z-index: 999;	
+}
+#superslide{
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	top: 0;
+	left: 0;	
+}
+.slidesjs-container{
+	height: 100% !important;	
+}
+.slidesjs-control{
+	/*left: 951px !important;*/
+}
+#sombraslide img{
+	position: relative;
+	left: 50%;
+	margin-left: -960px;	
+}
+.sellos{
+	margin-bottom: 15px;
+}
+.contenidoSuperior{
+	float: left;
+	width: 100%;
+	margin-top: 25px;	
+}
+.logoSeccion{
+    float: left;    
+    width: 105px;
+}
+.publireportaje{
+    float: left;
+    width: 520px;
+    overflow: hidden;
+    text-align: justify;
+    margin-left: 14px;
+}
+#contenedorreportaje{
+    float: left;
+    width: 520px;	
+}
+.publireportaje p{
+    margin-bottom: 10px;
+    float: left;
+    width: 100%;
+}
+.portafotito{
+	float: left;
+}
+.leermastexto{
+    color: #00B0C7;
+    float: left;
+    clear: left;
+    margin-left: 10px;
+    cursor: pointer;
+    font-size: 18px;
+}
+
+#contenedorreportajeb{
+    float: left;
+    width: 520px;	
+}
+.publireportajeb p{
+    margin-bottom: 10px;
+    float: left;
+    width: 100%;
+}
+.publireportajeb{
+    float: left;
+    width: 520px;
+    overflow: hidden;
+    text-align: justify;
+    margin-left: 14px;	
+}
+.portafotitob{
+	float: left;
+}
+.leermastextob{
+    color: #00B0C7;
+    float: left;
+    clear: left;
+    margin-left: 10px;
+    cursor: pointer;
+    font-size: 18px;
+}
+.oculto{
+	display: none;
+}
+
+/*DETALLE DEL PAQUETE*/
+#galeria{
+	float: left;
+	width: 100%;
+	margin-top: 25px;	
+}
+.nombrepaquete{
+	height: 151px;
+	float: left;
+	margin-left: 10px;
+	width: 270px;
+	overflow: hidden;	
+}	
+.nombrepaquete h1{
+	font-size: 25px;
+	width: 100%;
+	height: 77px;	
+}	
+.nombrepaquete h3{
+	float: left;
+	clear: left;
+	width: 100%;	
+}
+.facePaqueteDetalle{
+	float: left;
+}
+.minifotospaquete{
+	float: right;
+	width: 217px;
+	min-height: 151px;	
+}
+.minifotospaquete img{
+	margin: 3px;
+	cursor: pointer;
+	width: 100px;
+	height: 67px;
+}
+#fotoPral{
+	width: 227px;
+	height: 151px;
+	float: left;
+	overflow: hidden;	
+}
+#fotoPral img{
+	width: 100%;
+}
+#descripciontitle{
+	float: left;
+	background: #00B0C7;
+	width: 100%;
+	margin-top: 20px;
+	display: table;	
+}
+#descripciontitle h2{
+	color: #fff;
+	display: table-cell;
+	vertical-align: middle;
+	height: 100%;
+	width: 164px;
+	left: 25px;
+	position: relative;
+	font-size: 27px;
+	font-weight: normal;	
+}
+.flechaPaquetes{
+	
+}	
+.descripcionpaquete{
+	float: left;
+	width: 100%;
+	margin-top: 10px;	
+}
+.descripcionpaquete p{
+	text-align: justify;
+	float: left;
+	margin-bottom: 10px;	
+}
+#portadorpaquetes{
+	float: left;
+	width: 100%;	
+}
+#paquetesLeft{
+	float: left;
+	width: 252px;
+	min-height: 300px;
+}
+#paquetesLeft h3{
+	font-size: 20px;
+	color: #fff;
+	display: table-cell;
+	vertical-align: middle;
+	position: relative;
+	left: 10px;	
+}
+.grupal{
+  float: left;
+  width: 25%;
+  overflow: hidden;	
+}
+.grupal input{
+  float: left;
+  height: 27px;
+  margin-top: 0px;
+  width: 80%;	
+}
+#menor1, #menor2, #menor3, #menor4{
+	display: none;
+}  
+#edadesmenores{
+  float: left;
+  clear: left;
+  display:none;
+  width: 100%;
+  margin-bottom: 18px;
+}
+.escogepaquete{
+	background: url("../imagenes/escoge-paquete.png");
+	width: 252px;
+	height: 40px;
+	display: table;
+	float: left;
+}
+.listapaquetes{
+	float: left;
+	margin-top: -1px;
+	margin-left: 1px;
+	width: 235px;	
+}
+.currentpe{
+	background: #A6026D !important;
+}
+.listapaquetes li{
+	list-style: none;
+	float: left;
+	width: 100%;
+	background: #E60094;
+	color: #fff;
+	height: 36px;
+	border-bottom: 1px solid #ccc;
+	display: table;	
+	cursor: pointer;
+}
+.listapaquetes li span{
+	display: table-cell;
+	vertical-align: middle;
+	left: 10px;
+	position: relative;
+	font-size: 18px;	
+}
+#paquetesRight{
+	float: right;
+	width: 482px;	
+}
+.selectHotel{
+	float: left;
+	color: #333333;
+	font-size: 22px;	
+}							
+.selectRoom{
+	float: left;
+	margin-left: 180px;	
+}
+.seleccciondehabitacion{
+	float: right;
+	margin: 3px 0 0 3px;
+	width: 122px;	
+}
+.booknowtitle{
+	float: right;
+	margin: 2px 20px 0 0;
+	color: #E9AC1A;
+	font-size: 34px;
+}
+.cajitapaquetes{
+	float: left;
+	width: 100%;	
+}
+.cajitapaquetes a{
+	float: left;
+	clear: left;
+	background: #00B0C7;
+	padding: 2px 10px;
+	color: #fff;	
+	margin-bottom: 5px;
+}
+.cajitapaquetes a:hover{
+	background: #E60094;
+}
+.supercaja{
+	display: none;
+}
+.supercaja.current{
+	display: block;
+}
+.tableroPrecios .cajitaestrellas{
+	margin-top: 6px;
+}
+.tableroPrecios{
+	
+}
+.tableroPrecios table{
+	float: left;
+	width: 100%;	
+}
+.tableroPrecios table tr{
+	border-bottom: 1px solid #ccc;
+	float: left;
+	width: 100%;
+}
+.tdhotel{
+	width: 390px;
+}
+.nombrehotel{
+	float: left;
+	font-weight: normal;
+	margin-right: 5px;
+	font-size: 20px;
+	text-transform: capitalize;
+	font-weight: 300;	
+}
+.cajitaestrellas{
+	float: left;
+}
+.cajitaestrellas img{
+	float: left;
+	margin-right: 2px;
+}
+.estrellashtls{
+	margin: 9px 0 0 8px;
+}
+.btnReservaPaquete{
+	background: #E9AC1A;
+	padding: 1px 8px;
+	width: 130px;
+	color: #fff;
+	margin: 2px 0;
+}
+.cajitasecundariapaquetes{
+	float: left;
+	display: none;
+	width: 100%;
+	padding-top: 10px;
+	margin-top: 10px;	
+}
+.cajitasecundariapaquetes.current{
+	display: block;
+}
+.cajitapaquetesdesc{
+	float: left;
+	width: 100%;
+	border-bottom: 1px solid #ccc;
+	padding-bottom: 5px;
+	margin-bottom: 10px;	
+}
+.cajitapaquetesdesc p{
+	float: left;
+	width: 100%;
+	margin-bottom: 10px;	
+}
+.cajitadetalles{
+	float: left;
+	width: 100%;	
+}	
+.cajitadetalles li{
+	clear: left;
+	list-style-position: inside;
+	width: 100%;
+	list-style-type: circle;	
+}	
+.cajitadetalles h3{
+	float: left;
+	margin: 10px 0 0 0;	
+}	
+#otrosPaquetes{
+	float: left;
+	width: 100%;
+	margin-top: 25px;
+	background: #00B0C7;	
+}
+#otrosPaquetes h2{
+	float: left;
+	width: 100%;
+	text-align: center;
+	color: #fff;
+	font-size: 24px;
+	border-bottom: 1px solid #ccc;
+	margin-bottom: 10px;	
+}
+.minipaquetes{
+	float: left;
+	width: 100%;	
+}
+.minifoto{
+	float: left;
+	width: 90px;
+	margin-left: 10px;
+	height: 60px;	
+}
+.miniinfo{
+	float: left;
+	width: 118px;
+	margin-left: 2px;	
+}
+.miniinfo h2{
+	font-size: 15px !important;
+	font-weight: normal;
+	text-align: left !important;
+	border: none !important;	
+	margin: 0 !important;
+}
+.miniinfo h3{
+	float: left;
+	color: #fff;
+	width: 100%;
+	font-weight: normal;	
+}
+.titulopreciotour{
+	float: left;
+	margin-left: 10px;
+	color: #fff;
+	font-weight: normal;	
+}
+.separadormini{
+	float: left;
+	width: 100%;
+	border-bottom: 1px solid #ccc;	
+}
+.miniregistro{
+	float: left;
+	width: 100%;
+	margin: 10px 0;
+}
+.datoscontacto{
+	float: right;
+}
+.eltelefonito{
+	color: #E60094;
+	float: left;
+	font-size: 23px;	
+}
+.dudasdatos{
+	background: url("../imagenes/dudas1.png") no-repeat;
+	width: 21px;
+	height: 21px;
+	float: left;
+	margin-left: 5px;
+	cursor: pointer;
+	margin-top: 4px;
+}
+.dudasdatos:hover{
+	background: url("../imagenes/dudas2.png") no-repeat;
+}
+.chatdatos{
+	cursor: pointer;
+	background: url("../imagenes/chat1.png") no-repeat;
+	width: 21px;
+	height: 21px;	
+	float: left;
+	margin-left: 5px;
+	margin-top: 4px;
+}
+.chatdatos:hover{
+	background: url("../imagenes/chat2.png") no-repeat;
+}
+									
+.index{
+	
+}
+.paquetes-yucatan{
+	background-repeat: no-repeat;
+	background-position-x: 36px;
+	background-position-y: 7px;	
+}
+.tours-en-yucatan{
+	background-repeat: no-repeat;
+	background-position-x: 36px;
+	background-position-y: 7px;	
+}
+.hoteles-en-yucatan{
+	background-repeat: no-repeat;
+	background-position-x: 36px;
+	background-position-y: 7px;
+}
+.yucatan-mexico{
+	background-repeat: no-repeat;
+	background-position-x: 36px;
+	background-position-y: 7px;	
+}
+.contacto{
+	background-repeat: no-repeat;
+	background-position-x: 36px;
+	background-position-y: 7px;	
+}
+.linkPaquetes{	
+	top: 260px;
+}
+.linkHoteles{
+	top: 323px;		
+}
+.linkTours{
+	top: 325px;
+}
+.contlink{
+	position: absolute;
+	width: 253px;
+	height: 55px;	
+	cursor: pointer;
+}
+.contlink span{
+	display: table-cell;
+	vertical-align: middle;
+	font-family: Century Ghotic;
+	color: #fff;
+	font-size: 20px;
+	width: 100%;
+	text-align: center;	
+}
+#menuPeninsula{
+	float: left;
+	background: #E9AC1A;
+	margin-top: 20px;
+	width: 253px;	
+}
+#menuPeninsula ul{
+	background: url("../imagenes/menu-peninsula.jpg") no-repeat;	
+}
+#menuPeninsula li{
+	height: 34px;
+	list-style: none;
+	display: table;
+	width: 100%;
+	cursor: pointer;
+	color: #fff;
+	font-family: oswald;
+	margin-bottom: 5px;
+	font-weight: 300;
+}
+#menuPeninsula li span{
+	font-size: 21px;
+	position: relative;
+	left: 25px;
+	display: table-cell;
+	vertical-align: middle;
+}
+#descripcionesPeninsula{
+	background: #fff;
+	float: right;
+	width: 727px;
+	margin-top: 20px;	
+}
+.descPeninsula{	
+	float: left;
+	width: 100%;
+	padding: 15px;
+	display: none;
+	min-height: 720px;	
+}
+.currentdesc{
+	display: block;
+}
+.descPeninsula h1{
+	float: left;
+	width: 100%;
+	font-size: 23px;
+	font-weight: 400;
+	margin-bottom: 10px;	
+}
+.descPeninsula p{
+	float: left;
+	width: 100%;
+	margin-bottom: 15px;	
+}
+.currentdesc{
+	
+}
+.samtucan{
+	position: absolute;
+	right: 0;
+	bottom: -117px;
+}
+#contacto{
+	float: left;
+	width: 550px;
+	height: 260px;
+	background: #00B0C7 !important;
+	margin-top: 50px;
+}
+.centercontacto{
+	height: 470px;
+}
+#contacto h1{
+	color: #fff;
+	float: left;
+	margin: 10px 0 0 20px;
+	font-weight: 300;
+	font-size: 30px;
+	width: 500px;
+}
+.columnaContacto{
+	float: left;
+	width: 241px;
+	margin: 0 0 0 20px;	
+}
+#contacto label{
+	float: left;
+	width: 100%;
+	color: #fff;	
+}
+#contacto input{
+	width: 100%;
+	margin-bottom: 10px;
+	border: none;
+	height: 27px;	
+}
+#contacto input:focus, #contacto textarea:focus{
+	border: 1px solid #035C6A;
+}
+#contacto textarea{
+	width: 100%;
+	height: 135px;
+	overflow: hidden;	
+}
+#btnContacto{
+	background: #035C6A;
+	color: #fff;
+	float: right;
+	padding: 2px 11px;
+	font-size: 20px;
+	font-weight: 100;
+	margin-right: 28px;
+	margin-top: 10px;	
+}
+#mensajeFinal{
+	float: left;
+	width: 550px;
+	height: 260px;
+	background: #00B0C7 !important;
+	margin-top: 50px;	
+	display: none;
+}
+#mensajeFinal h1{
+	float: left;
+	color: #fff;
+	font-weight: 100;
+	font-size: 25px;
+	margin: 25px 0 0 20px;	
+}
+.centerlogin{
+	height: 500px;
+}
+#cajalogin{	
+	width: 250px;
+	height: 180px;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	margin-top: -90px;
+	margin-left: -125px;
+	box-shadow: -1px 10px 20px -12px #000;
+	padding: 0 20px;	
+}
+#cajalogin label{
+	float: left;
+	width: 100%;	
+	font-weight: bold;
+}
+#cajalogin input{
+	float: left;
+	width: 100%;
+	margin-bottom: 18px;	
+}
+#cajalogin button{
+	background: #E60094;
+	color: #fff;
+	position: absolute;
+	bottom: 20px;
+	right: 14px;
+	padding: 6px 15px;
+	cursor: pointer;	
+}
+#cajalogin button:hover{
+	background: #B5BA06;	
+}
+#mensajes{
+	background: #D12420;
+	width: 100%;
+	position: fixed;
+	bottom: -45px;
+	z-index: 999;
+	height: 40px;
+	display: table;
+	text-align: center;
+}
+#mensajes p{
+	font-family: oswald;
+	font-size: 20px;
+	color: #fff;
+	display: table-cell;
+	vertical-align: middle;
+}
+#fecha{
+	height: 32px;
+	float: left;
+	clear: left;
+	width: 160px;
+}
+.seccion label{
+	color: #E60094;
+	float: left;
+	clear: both;
+	width: 100%;
+	font-weight: 100;
+	font-size: 18px;
+}
+#filaformulario{
+	float: left;
+	margin-top: 20px;
+	width: 100%;	
+}
+.seccion{
+	float: left;
+	width: 230px;	
+}
+.precioTours{
+	float: right;
+	clear: both;	
+	margin-bottom: 40px;
+}
+.titulorestour{
+	color: #E9AC1A;
+	float: right;	
+}
+.precioTours h3{
+	float: right;
+	clear: both;
+	font-size: 18px;	
+}
+.precioTours button{
+	background: #E9AC1A;
+	color: #fff;
+	clear: both;
+	padding: 5px 8px;
+	float: right;	
+}
+.apunteReserva{
+	float: right;
+	clear: both;
+	font-style: italic;	
+}
+.updateprecio{
+	float: right;
+	margin-top: 11px;
+	color: #fff;
+	font-size: 16px;	
+	display: none;
+}
+.updateprecio .imgleft{
+	float: left;
+	margin: 3px 10px 0 0;	
+}
+.updateprecio .imgright{
+	float: right;
+	margin: 3px 10px 0 10px;	
+}
+.footerReserva{
+	float: right;
+	width: 100%;
+	text-align: right;	
+	font-size: 20px;
+}
+.italica{
+	font-style: italic;
+}
+#banderas{
+  position: absolute;
+  top: 18px;
+  right: 0;
+  /* width: 150px; */
+  overflow: hidden;
+  height: 40px;
+}
+#banderas img{
+	float: right;
+	height: 25px;
+	cursor: pointer;
+	width: 40px;
+	margin-left: 5px;	
+}
+#navcel{
+	display: none;
+}
+.privacidad{
+	color: #00B0C7;
+	float: left;
+	width: 100%;
+	margin-top: 25px;
+	margin-bottom: 25px;	
+}
+#voucher{
+	width: 400px;
+	float: left;
+	border: 1px solid #ccc;
+	padding: 10px;
+	margin-bottom: 20px;	
+	clear: left;
+}
+#voucher h3{
+	float: left;
+	width: 100%;
+	font-size: 16px;
+	margin-bottom: 10px;	
+}
+#voucher table{
+	width: 100%;
+}
+#voucher table tr{
+	width: 100%;
+	height: 20px;
+}
+.negrita{
+	font-weight: bold;
+}
+.azul{
+	color: #00B0C7;
+}
+#titulocompra{
+	font-size: 30px;
+	float: left;
+	width: 100%;
+	margin-top: 30px;
+	color: #00B0C7;
+	margin-bottom: 20px;	
+}
+.tituloTicket{
+	font-weight: bold;
+}
+.importevoucher{
+	text-align: center;
+	height: 50px;	
+}
+.imprimirvoucher{
+	cursor: pointer;
+}
+#detalleCompra{
+	width: 100%;
+	float: left;
+	border: 1px solid #ccc;
+	padding: 10px;
+	margin-bottom: 20px;	
+	clear: left;	
+}
+#detalleCompra h3{
+	float: left;
+	width: 100%;
+	font-size: 16px;
+	margin-bottom: 10px;		
+}
+#detalleCompra h3{
+	float: left;
+	width: 100%;
+	font-size: 16px;
+	margin-bottom: 10px;
+}
+#detalleCompra table{
+	width: 100%;
+}
+.tituloPagar{
+	float: right;
+	margin-right: 20px;
+	font-weight: bold;	
+}
+.encabezado{
+	background: #ccc;
+	height: 30px;	
+	font-weight: bold;
+}
+.totalpagar{
+	height: 40px;
+}
+.imprimeCompra{
+	float: right;
+	clear: left;
+	width: 160px;
+	cursor: pointer;
+	text-align: center;
+	height: 40px;
+	display: table;
+	background: #00B0C7;
+	border-radius: 10px 0 0 0;
+}
+.imprimeVoucher{
+	float: left;
+	clear: left;
+	width: 160px;
+	cursor: pointer;
+	text-align: center;
+	height: 40px;
+	display: table;
+	background: #00B0C7;
+	border-radius: 10px 0 0 0;
+	margin-left: 240px;
+}
+.imprimeCompra:hover, .imprimeVoucher:hover{
+	background: #017C8C;
+}
+.btnImprimirCompra, .btnImprimirVocuher{
+	display: table-cell;
+	vertical-align: middle;
+	color: #fff;	
+	font-weight: bold;
+}
+#resumendecompra{
+	float: left;
+	width: 100%;
+	margin-top: 30px;	
+}
+.divform h3{
+	color: #00B0C7;
+	float: left;
+	width: 100%;
+	font-size: 25px;
+	font-weight: normal;
+	margin-bottom: 10px;
+}
+.divform label{
+	float: left;
+	width: 100%;
+	font-weight: bold;	
+}
+.divform input{
+	float: left;
+	margin-bottom: 10px;
+	width: 220px;
+}
+#sureserva{
+	float: left;
+	width: 100%;
+}
+.seleccion{
+	float: left;
+	margin-bottom: 10px;	
+}
+.cajonform{
+	float: left;
+	/* border: 1px solid; */
+	width: 102px;
+	margin-right: 10px;
+}
+#procesando{
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	display: none;	
+}
+#contenidoprocesa{
+	position: absolute;
+	z-index: 999;
+	top: 50%;
+	left: 50%;
+	width: 250px;
+	margin-left: -125px;
+	height: 100px;
+	margin-top: -50px;	
+}
+#contenidoprocesa img{
+	position: relative;
+	left: 50%;
+	margin-left: -24px;	
+}
+#mensajeprocesa{
+	clear: left;
+	float: left;
+	text-align: center;
+	margin-top: 8px;
+	color: #fff;
+	font-size: 20px;	
+}
+.oscuro{
+	background: rgba(0,0,0,0.5);
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	z-index: 100;
+}
+#reservanow{
+	background: #017C8C;
+	color: #fff;
+	cursor: pointer;
+	border: none;
+	padding: 5px 10px;
+	float: left;
+	margin: 45px 0 50px 0;
+	font-weight: bold;
+	font-size: 25px;
+	clear: left;
+}
+#reservanow:hover{
+	background: #015D6A;
+}
+.actualizaelprecio{
+	background: #017C8C;
+	display: none;
+	color: #fff;	
+	border: none;
+	padding: 5px 10px;
+	float: left;
+	margin: 10px 0 20px 0;
+	font-weight: bold;
+	font-size: 20px;
+	clear: left;
+}
+.cajitaforma{
+	float: left;
+	width: 210px;
+	margin-right: 50px;
+	min-height: 224px;
+}
+#transportacion{
+	float: left;
+	width: 100%;
+	border: 1px solid #ccc;
+	padding-left: 10px;
+	height: 285px;
+}
+#transportacion h2{
+	color: #00B0C7;
+	float: left;
+	width: 100%;
+	font-size: 20px;
+	font-weight: normal;
+	margin-bottom: 10px;	
+}
+#transportacion label{
+	float: left;
+	clear: left;
+}
+#transportacion input{
+	float: left;
+	clear: left;
+	margin-bottom: 5px;
+}
+.eltotalapagar{
+	background: #E60094;
+	margin: 20px 0 0 0;
+	float: left;
+	padding: 2px 5px;
+	color: #fff;
+	font-size: 16px;	
+}
+#otrosdatos{
+	float: left;
+	width: 100%;	
+}
+#otrosdatos label{
+	float: left;
+	width: 100%;
+	font-weight: bold;	
+}
+#otrosdatos span{
+	float: left;
+	width: 100%;
+	margin-bottom: 20px;
+	font-size: 20px;	
+}
+.importante{
+	font-size: 15px !important;
+	color: #A00;
+	text-decoration: underline;	
+}
+.cajitaitinerario{
+	float: left;
+	width: 100%;		
+}
+#cargaaventura{
+	float: left;
+	width: 100%;
+	height: 34px;
+	padding-left: 24px;	
+}
+#suggestions{
+	width: 360px;
+	height: 150px;
+	overflow: auto;
+	position: absolute;
+	margin-left: 24px;
+	color: #666;
+	background: #fff;
+	top: 42px;
+	z-index: 999;
+	border: 1px solid #ccc;
+	margin-top: 25px;
+	display: none;
+}
+.campobuscando{
+	background: url("../imagenes/ajax-loader.gif") center right #fff;
+	background-repeat: no-repeat;
+}
+.suggest-element{
+	cursor: pointer;
+}
+.suggest-element:hover{
+	background: #ccc;
+}
+.suggest-element a{
+	
+}
+.gris{
+	color: #ccc;
+}
+.tituloPoliticas{
+	color: #00B0C7;
+	float: left;
+	width: 100%;
+	margin-top: 25px;	
+}
+.tablaPoliticas{
+	
+}
+#info_paquete_texto{
+	float: left;
+}
+#recomendaciones{
+	float: left;
+	margin-top: 15px;
+	margin-bottom: 15px;	
+}
+#recomendaciones li{
+	list-style: square;
+	list-style-position: inside;
+	margin-bottom: 5px;	
+}
+.vermasinfo{
+	display: table;
+	float: left;
+	width: 150px;
+	height: 30px;
+	background: #E60094;
+	vertical-align: middle;
+	text-align: center;
+	margin: 32px 0 0 0px;
+}
+.vermasinfo span{
+	float: none !important;
+	margin: 0 !important;
+	display: table-cell;
+	vertical-align: middle;
+	font-size: 16px;
+}
+.vermasinfo:hover{
+	background: #E9AC1A;
+}
+.vermasinfotour{
+	display: table;
+	float: left;
+	width: 150px;
+	height: 30px;
+	background: #00B0C7;
+	vertical-align: middle;
+	text-align: center;
+	margin: 5px 0 0 0px;	
+}
+.vermasinfotour span{
+	float: none !important;
+	margin: 0 !important;
+	display: table-cell;
+	vertical-align: middle;
+	font-size: 16px;	
+}
+.vermasinfotour:hover{
+	background: #E9AC1A;
+}
+#eltipodeplan{
+    display: table;
+    float: left;
+    padding: 0 15px;
+    height: 30px;
+    background: #E9AC1A;
+    text-align: center;
+    margin: 0px 0 20px 0px;
+    clear: left;
+    color: #fff;	
+}
+#eltipodeplan span{
+display: table-cell;
+    vertical-align: middle;	
+}
+
+.mask{
+	
+}
+
+/*MOVILES*/
+@media (max-width: 300px){
+	.infoRegistro{
+	   height: 171px;
+	}
+}
+@media (max-width: 480px){
+	#slide{
+		display: none;
+	}
+	#paquetesRight{
+		width: 100% !important;
+	}
+	header{
+		  height: 116px;
+		  background: url("../imagenes/header-movil.png")top center no-repeat;		
+	}
+	#contacto h1 {
+		width: 100%;
+	}
+   .center{
+   	  width: 98%;
+   	  margin-left: -49%;
+   }
+   .centerfull{
+   	width: 100% !important;
+   	margin-left: -50% !important;
+   }
+   #logo{
+	  margin: 25px 0 0 0;	 
+	  width: 100%;   	
+   }
+   #logo img{
+   	  width: 186px;
+   }
+   .solopc{
+   	  display: none;
+   }
+   #navcel{
+	  display: block;	  
+	  float: right;
+	  width: 44px;
+	  height: 32px;
+	  margin-top: -31px;
+	  cursor: pointer;
+   }
+   #sombraslide img {
+  width: 100%;
+  margin-left: -50% !important;
+   }
+   #cajamenu{
+	  float: left;
+	  width: 100%;
+	  height: 100%;
+	  border: 1px solid #666;
+	  border-radius: 4px;
+	  padding: 5px 0px 0px 3px; 	
+   }
+   .rayanav{
+	  width: 90%;
+	  height: 1px;
+	  border: 1px solid #00B0C7;
+	  margin-bottom: 4px; 	
+   }
+   #slide{
+   	  height: 402px !important;
+   }
+   #motor{
+   	  width: 100%;
+   	  height: 402px;
+   }			    
+   #encuentra{
+  	    margin: -147px 13px 0 0;  	
+   }
+   #motor .grupo{
+   	  width: 89%;
+   }	
+   #adultosb, #menoresb{
+   	  width: 162px;
+   }
+   .registro{
+   	height: auto;
+   }
+   #contenidoLeft{
+   	width: 100%;
+   }
+   .moviloculto{
+   	display: none;
+   }
+   .tituloPaquete{
+   	width: 100%;
+   	text-align: center;	
+   }
+   .fotoRegistro{
+	  width: 100%;
+	  height: 259px;
+	  overflow: hidden;
+   }
+   .infoRegistro{
+   	  width: 100%;
+   }
+   .textoRegistro{
+   	  width: 55%;
+   	  text-align: justify;
+   	  margin-left: 0px;
+   }
+   .columnaFooter{
+	  margin: 55px 20px 0 0;
+	  width: 44%;
+	  height: auto; 	
+   }
+   .columnaimagenes{
+   	  width: 100% !important;
+   	  margin-top: 33px !important;
+   }
+   .columnaFooter ul li{
+   	  font-size: 12px;
+   	  min-height: 19px;
+   }
+   nav{
+	  background: #fff;
+	  width: 100%;
+	  position: absolute;
+	  top: 66px;
+	  margin-left: 0px; 
+	  display: none;	
+   }
+   nav ul li {
+	  height: 35px;
+	  width: 100%;
+	  background: #fff;
+	  border-bottom: 1px solid #ddd;
+   }
+   #contenido{
+   	  margin-top: -10px;
+   }
+   .precioRegistro{
+   	    right: 0px;
+   	    height: auto;
+   	    width: 40%;
+   }
+   .precioRegistro h2{
+   	font-size: 14px;
+    font-weight: normal;
+   }
+   .vermasinfo {
+  	 width: 100%;
+   }
+   .vermasinfo span{
+   	  font-size: 13px;
+   }
+   .vermasinfotour{
+   	  width: 100%;
+   }
+   #contenidoRight{
+   	display: none;
+   }
+   .faceRegistro{
+   	display: none;
+   }
+   .publireportaje{
+	   float: left;
+	  width: 100%;
+	  height: auto;  	
+   }
+   .publireportaje p{
+   	text-align: justify;
+   }
+   #contacto{
+	  width: 100%;
+	  height: auto;
+	  padding: 0 0 27px 0;
+	    overflow: hidden;
+   }
+   #btnContacto{
+	  float: left;
+	  clear: left;
+	  margin-left: 21px;   	
+   }
+   .centercontacto{
+	  height: 510px;   	
+   }
+   #mensajeFinal{
+   	  width: 100%;
+   }
+   #descripcionesPeninsula{
+   	  width: 100%;
+   }
+   .descPeninsula img{
+   	max-width: 100%;
+   }
+}
+
+
+@media (min-width: 768px) and (max-width: 1024px) and (orientation : portrait){
+	.center{
+		width: 100%;
+		margin-left: -50%;
+	}	
+	header{
+		  background: url("../imagenes/header-movil.png")top center no-repeat;		
+	}	
+   #logo{
+	  margin: 24px 0 0 10px;
+	  width: 186px;   	
+   }
+   #logo img{
+   	  width: 186px;
+   }	
+   nav{
+	  float: right;
+	  width: 69%;
+	  margin: 59px 0 0 35px;
+	  box-sizing: border-box;   	
+   }
+   #motor{
+   	  width: 300px;
+   }
+   #motor form{
+   	  margin-left: -15px;
+   }
+   #motor .grupo{
+   	  width: 41%;
+   }
+   #adultos, #adultosb, #adultosc{
+   	  width: 126px;
+   }
+   #menores, #menoresb, #menoresc{
+   	  width: 126px;
+   }
+   #contenidoRight{
+   	display: none;
+   }
+   #contenidoLeft{
+   	  width: 100%;
+   }
+   .columnaimagenes{   	  
+	  bottom: 0px;
+	  height: auto;
+   }
+   .sellos{
+   	  max-height: 50px;
+   }
+   #slide{
+   	overflow: hidden;
+   }
+   #sombraslide{
+   	  overflow: hidden;
+   }
+   #descripcionesPeninsula{
+   	float: left;
+   	width: 496px;	
+   }
+   .imgslide{
+   	right: -271px;
+   }
+   #descripcionesPeninsula img{
+   	max-width: 100%;
+   }
+   .columnaFooter{
+	  height: auto;
+	    width: 170px;
+	  min-height: 177px;   	
+   }
+   footer{
+   	  overflow: hidden;
+   }
+   .topparaipad{
+   	  margin-top: 10px;
+   }
+}
+
+@media (min-width: 690px) and (max-width: 1024px) and (orientation : landscape){
+
+	header{
+		  background: url("../imagenes/header-movil.png")top center no-repeat;		
+	}	
+   #logo{
+	  margin: 24px 0 0 10px;
+	  width: 186px;   	
+   }
+   #logo img{
+   	  width: 186px;
+   }	
+   nav{
+	  float: right;
+	  width: 69%;
+	  margin: -7px 0 0 35px;
+	  box-sizing: border-box;   	
+   }
+   nav ul li{
+   	    width: 64px;
+   }   
+   #motor{
+   	  width: 300px;
+   }
+   #motor .grupo{
+   	  width: 41%;
+   }
+   #adultos, #adultosb, #adultosc{
+   	  width: 126px;
+   }
+   #menores, #menoresb, #menoresc{
+   	  width: 126px;
+   }
+   #slide{
+   	overflow: hidden;
+   }
+   #sombraslide{
+   	  overflow: hidden;
+   }
+   #descripcionesPeninsula{
+   	float: left;
+      width: 715px;
+   }
+   .imgslide{
+   	    right: -338px;
+   }
+   .center{
+    width: 100%;
+    left: 0;
+    margin-left: 0;
+   }
+   #contenidoRight{
+   	display: none;
+   }	
+   #contenidoLeft{
+   	width: 100%;
+   }
+   .logoSeccion{
+   	width: 150px;
+   }
+   .infoRegistro{
+   	width: 457px;
+   }
+   .textoRegistro{
+   	width: 297px;
+   }
+   .columnaFooter{
+   	width: 151px;
+   }
+   .topparaipad{
+	    clear: left;
+	    margin-top: -153px;
+	    margin-left: 163px;   	
+   }
+}
+
+
+
+#portafechashotel{
+  border: 1px solid #ccc;
+  float: left;
+  width: 100%;
+  padding: 10px;	
+}
+.gpofechas{
+  float: left;
+  margin-right: 50px;	
+}
+.roomsselect{
+  float:left;
+  clear: both;
+  width: 100%;	
+}
+.roomsselect label{
+  font-size: 17px;
+  float: left;
+  margin-right: 10px;
+  margin-top: 3px;	
+}
+.roomsselect select{
+	float: left;
+	height: 27px;
+	width: 170px;	
+}
+.gpofechas label{
+  font-size: 17px;
+  float: left;
+  margin-right: 10px;
+  width: 61px;
+  margin-top: 3px;	
+}
+.gpofechas input{
+  float: left;
+  height: 27px;
+  margin-top: -3px;
+  width: 170px;	
+}
+.gpofechas select{
+	float: left;
+	height: 27px;
+	width: 170px;
+}
+.margbottom{
+	margin-bottom: 20px;
+}
+.portaprecios{
+  float: left;
+  width: 100%;
+  margin-top: 15px;	
+}
+.descripthotel{
+    float: left;
+    text-align: justify;
+    margin-bottom: 10px;	
+}
+.day{
+  float: left;
+  width: 10%;
+  text-align: center;
+  background: #017C8C;
+  color: #fff;
+  padding: 5px;	
+}
+.cambio{
+   background: #015D6A !important;
+}
+.lafecha{
+	
+}
+.elprecio{
+  margin-top: 10px;
+  float: left;	
+  width: 100%;
+}
+.monedahtl{
+	float: left;
+	clear: left;
+	width: 100%;
+}
+.vermasinfohtl{
+  display: table;
+  float: left;
+  padding: 0 15px;
+  height: 30px;
+  /*background: #E60094;*/
+ background: #E9AC1A;
+  vertical-align: middle;
+  text-align: center;
+  margin: 0px 0 20px 0px;
+  clear: left;
+  color: #fff;
+  cursor: pointer;
+}
+.vermasinfohtl span{
+	float: none !important;
+	margin: 0 !important;
+	display: table-cell;
+	vertical-align: middle;
+	font-size: 16px;
+}
+
+.btnbuscarfechas{
+  display: table;
+  float: left;
+  padding: 0 15px;
+  height: 30px;
+  background: #E60094; 
+  
+  vertical-align: middle;
+  text-align: center;
+  margin: -5px 0 0px 0px;
+  clear: left;
+  color: #fff;
+  cursor: pointer;	
+}
+.btnbuscarfechas span{
+	float: none !important;
+	margin: 0 !important;
+	display: table-cell;
+	vertical-align: middle;
+	font-size: 16px;
+}
+.btnbuscarfechas:hover{
+	background: #E9AC1A;
+}
+.aligntop{
+	vertical-align: top !important;
+}
+
+
+#menumapas{
+    margin-top: 50px;
+    float: left;	
+}
+#menumapas li.activo{
+	background: #00B0C7;
+	color: #fff;
+}
+#menumapas li{
+    display: table;
+    float: left;
+    list-style: none;
+    background: #ccc;
+    height: 50px;
+    border-radius: 5px 5px 0 0;
+    margin: 0 1px 0 0;
+    width: 130px;
+    text-align: center;
+    color: #000;
+    cursor: pointer;
+}
+#menumapas li span{
+    display: table-cell;
+    vertical-align: middle;    
+    font-size: 16px;
+}
+#portamapas{
+    border: 1px solid #ccc;
+    float: left;
+    width: 100%;
+    height: 800px;	
+}
+.mapita{
+    float: left;
+    width: 100%;	
+}
+.mapita img{
+    max-width: 100%;
+    margin-top: 50px;	
+}

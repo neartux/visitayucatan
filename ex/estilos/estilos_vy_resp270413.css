@@ -1,0 +1,443 @@
+* {margin:0px ; padding:0px ; border: 0px}
+
+body {
+	text-align: center;
+	background-color: #FFF;
+	background-image: url(../imagenes/bg.jpg);
+	background-repeat: repeat-x;
+	background-position: 0px 0px;
+}
+
+#global {
+	width: 1024px;
+	margin: 0px auto;
+	height:100%; /**** importante ****/
+	height:1%;
+}
+#global #cuerpo {
+	background-image: url(../imagenes/bg_cuerpo.jpg);
+	background-repeat: repeat;
+	background-position: 0px 0px;
+	width: 1024px;
+	margin-right: auto;
+	margin-left: auto;
+}
+/* pie página */
+#piebg {
+	background-color: #FFFFFF;
+	clear: both;
+	width: 100%;
+}
+#piebg #piepag {
+	background-color: #E60094;
+	width: 1024px;
+	height: 160px;
+	margin-right: auto;
+	margin-left: auto;
+}
+#piebg #piepag #columna1 {
+	float: left;
+	height: 160px;
+	width: 340px;
+}
+
+#piebg #piepag #columna1 #espacio1 {
+	float: left;
+	height: 160px;
+	width: 30px;
+}
+#piebg #piepag #columna1 #espacio2 {
+	float: left;
+	height: 30px;
+	width: 310px;
+}
+#piebg #piepag #columna1 ul {
+	margin-top: 24px;
+	list-style-type: none;
+	/*float: left;*/
+	width: 280px;
+	margin-left: 30px;
+}
+#piebg #piepag #columna1 li {
+	list-style-position: outside;
+	list-style-image: url(../imagenes/vineta011.jpg);
+	text-align: left;
+	font-family: Geneva, Arial, Helvetica, sans-serif;
+	font-size: 12px;
+	color: #FFFFFF;
+	font-weight: bold;
+	letter-spacing: 0.05em;
+	margin-bottom: 8px;
+	margin-left: 30px;
+}
+#piebg #piepag #columna1 a {
+	font-family: Geneva, Arial, Helvetica, sans-serif;
+	font-size: 12px;
+	color: #FFFFFF;
+	text-decoration: underline;
+}
+#piebg #piepag #columna1 a:hover {
+	font-family: Geneva, Arial, Helvetica, sans-serif;
+	font-size: 12px;
+	color: #FFFF99;
+	text-decoration: underline;
+}
+#piebg #piepag #columna1 #adcom {
+	width: 310px;
+	float: left;
+}
+#piebg #piepag #columna1 #adcom #texto1 {
+	font-family: Geneva, Arial, Helvetica, sans-serif;
+	font-size: 10px;
+	color: #FFFFFF;
+	text-align: right;
+	margin-top: 90px;
+}
+
+#piebg #piepag #columna1 #adcom #texto2 {
+	font-family: Geneva, Arial, Helvetica, sans-serif;
+	font-size: 10px;
+	color: #FFFFFF;
+	margin-top: 10px;
+	text-align: right;
+}
+#piebg #piepag #columna1 #adcom img {
+	float: right;
+}
+
+/* la parte superior */
+#global #cuerpo #top {
+	height: 14px;
+	width: 1024px;
+	background-image: url(../imagenes/bg_top.jpg);
+	background-repeat: repeat-x;
+	background-position: 0px 0px;
+}
+#global #cuerpo #superior {
+	height: 123px;
+	width: 1024px;
+	background-color: #FFFFFF;
+	float: left;
+}
+#global #cuerpo #intertop {
+	background-image: url(../imagenes/bg_intertop.jpg);
+	background-repeat: repeat-x;
+	background-position: 0px 0px;
+	height: 12px;
+	width: 1024px;
+	float: left;
+}
+#global #cuerpo #banner {
+	height: 412px;
+	width: 1024px;
+	background-image: url(../imagenes/bg_banner.jpg);
+	background-repeat: no-repeat;
+	background-position: 0px 0px;
+	float: left;
+}
+#global #cuerpo #banner #banner_contiene {
+	height: 412px;
+	width: 946px;
+	margin-right: auto;
+	margin-left: auto;
+}
+#global #cuerpo #superior #logo_vy {
+	height: 123px;
+	width: 300px;
+	float: left;
+	background-image: url(../imagenes/logo_vy.jpg);
+	background-repeat: no-repeat;
+	background-position: center center;
+}
+#global #cuerpo #superior #publi01 {
+	float: left;
+	height: 123px;
+	width: 600px;
+	text-align: center;
+}
+#global #cuerpo #superior #sociales {
+	float: left;
+	height: 123px;
+	width: 124px;
+}
+#global #cuerpo #cintilla {
+	background-color: #DAA927;
+	float: left;
+	height: 13px;
+	width: 1024px;
+}
+/* PARA LA PARTE CENTRAL */
+#global #cuerpo #central {
+	background-image: url(../imagenes/bg_cuerpo.jpg);
+	background-repeat: repeat;
+	width: 1024px;
+	height: 100%;
+	float: left;
+}
+#global #cuerpo #central #col1 {
+	float: left;
+	width: 208px;
+	height: 100%;
+}
+#global #cuerpo #central #col2 {
+	float: left;
+	width: 608px;
+}
+#global #cuerpo #central #col2 h3 {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 16px;
+	font-weight: bold;
+	color: #BE0000;
+	margin-top: 40px;
+	margin-left: 30px;
+	text-align: left;
+}
+#global #cuerpo #central #col2 #texto3 {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 12px;
+	color: #333333;
+	text-align: justify;
+	width: 550px;
+	margin-right: auto;
+	margin-left: auto;
+	margin-top: 10px;
+	margin-bottom: 10px;
+	letter-spacing: 0.05em;
+}
+#global #cuerpo #central #col1 #esp_pub {
+	height: 400px;
+	width: 208px;
+	padding-top: 40px;
+	padding-right: 0px;
+	padding-left: 0px;
+}
+#global #cuerpo #central #col2 #contiene_botones {
+	height: 204px;
+	width: 606px;
+	margin: 0px;
+}
+#global #cuerpo #central #col2 #contiene_botones #boton_princ1 {
+	text-align: left;
+	float: left;
+	height: 204px;
+	width: 303px;
+}
+#global #cuerpo #central #col2 #contiene_botones #boton_princ2 {
+	text-align: right;
+	float: left;
+	height: 204px;
+	width: 303px;
+}
+#global #cuerpo #central #col2 #separa_botones {
+	height: 20px;
+	width: 606px;
+}
+#global #cuerpo #central #col2 #contiene_botones2 {
+	height: 182px;
+	width: 606px;
+	margin: 0px;
+}
+#global #cuerpo #central #col2 #contiene_botones2 #boton_princ3 {
+	text-align: left;
+	float: left;
+	height: 182px;
+	width: 227px;
+}
+#global #cuerpo #central #col2 #contiene_botones2 #boton_princ4 {
+	text-align: right;
+	float: left;
+	height: 81px;
+	width: 379px;
+}
+#global #cuerpo #central #col2 #contiene_botones2 #separa_botones2 {
+	float: right;
+	height: 20px;
+	width: 379px;
+}
+#global #cuerpo #central #col2 #contiene_botones3 {
+	height: 81px;
+	width: 606px;
+	margin: 0px;
+}
+/******** ESTA PARTE ES DE LOS TOURS ***************************/
+#global #cuerpo #central_interior {
+	background-image: url(../imagenes/bg_interior.jpg);
+	background-repeat: repeat;
+	width: 1024px;
+	height: 100%;
+	float: left;
+}
+#global #cuerpo #central_interior #menu_principal {
+	float: left;
+	height: 46px;
+	width: 1024px;
+}
+#global #cuerpo #central_interior #menu_principal #espacio3 {
+	float: left;
+	height: 46px;
+	width: 40px;
+}
+#global #cuerpo #central_interior #menu_principal #contiene_botsmenu {
+	float: left;
+	height: 46px;
+	width: 944px;
+}
+#global #cuerpo #central_interior #menu_principal #contiene_botsmenu #boton1 {
+	float: left;
+	height: 46px;
+	width: 86px;
+}
+#global #cuerpo #central_interior #menu_principal #contiene_botsmenu #boton2 {
+	float: left;
+	height: 46px;
+	width: 92px;
+}
+#global #cuerpo #central_interior #menu_principal #contiene_botsmenu #boton3 {
+	float: left;
+	height: 46px;
+	width: 125px;
+}
+#global #cuerpo #central_interior #menu_principal #contiene_botsmenu #boton4 {
+	float: left;
+	height: 46px;
+	width: 107px;
+}
+#global #cuerpo #central_interior #menu_principal #contiene_botsmenu #boton5 {
+	float: left;
+	height: 46px;
+	width: 125px;
+}
+#global #cuerpo #central_interior #menu_principal #contiene_botsmenu #boton6 {
+	float: left;
+	height: 46px;
+	width: 113px;
+}
+#global #cuerpo #central_interior #menu_principal #contiene_botsmenu #boton7 {
+	float: left;
+	height: 46px;
+	width: 174px;
+}
+#global #cuerpo #central_interior #menu_principal #contiene_botsmenu #boton8 {
+	float: left;
+	height: 46px;
+	width: 122px;
+}
+#global #cuerpo #central_interior #col3 {
+	float: left;
+	width: 40px;
+	height: 100%;
+	background-image: url(../imagenes/bg_interior.jpg);
+	background-repeat: repeat;
+}
+#global #cuerpo #central_interior #col4 {
+	float: left;
+	width: 944px;
+	background-image: url(../imagenes/bg_interior.jpg);
+	background-repeat: repeat;
+	height: 100%;
+}
+#global #cuerpo #central_interior #col4 #parte_central {
+	float: left;
+	width: 644px;
+}
+#global #cuerpo #central_interior #col4 #parte_central #espacio4 {
+	float: left;
+	height: 10px;
+	width: 644px;
+}
+#global #cuerpo #central_interior #col4 #col_publicidad {
+	float: left;
+	width: 299px;
+	text-align: right;
+}
+#global #cuerpo #central_interior #col4 #col_publicidad #esp_pub2 {
+	text-align: right;
+	height: 100px;
+	width: 299px;
+	padding-top: 12px;
+}
+#global #cuerpo #central_interior #col4 #col_publicidad #esp_pub3 {
+	text-align: right;
+	height: 390px;
+	width: 299px;
+	padding-top: 12px;
+}
+#global #cuerpo #central_interior #col4 #parte_central #contenido_tours {
+	background-color: #FFFFFF;
+	float: left;
+	height: 100%;
+	width: 644px;
+}
+#global #cuerpo #central_interior #col4 #parte_central #contenido_tours #tit_tours {
+	background-color: #36B0CF;
+	height: 87px;
+	width: 644px;
+}
+#global #cuerpo #central_interior #col4 #parte_central #contenido_tours #tit_tours h2 {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 24px;
+	font-weight: bold;
+	color: #FFFFFF;
+	padding-top: 14px;
+}
+#global #cuerpo #central_interior #col4 #parte_central #espacio5 {
+	float: left;
+	height: 20px;
+	width: 644px;
+	background-color: #FFFFFF;
+}
+#global #cuerpo #central_interior #col4 #parte_central #info_tours {
+	background-color: #FFFFFF;
+	float: left;
+	height: 250px;
+	width: 644px;
+}
+#global #cuerpo #central_interior #col4 #parte_central #info_tours #tit_tours_bg {
+	background-image: url(../imagenes/tit_tours.gif);
+	background-repeat: no-repeat;
+	float: left;
+	height: 85px;
+	width: 644px;
+}
+#global #cuerpo #central_interior #col4 #parte_central #info_tours #tit_tours_bg h3 {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 18px;
+	font-weight: bold;
+	color: #FFFFFF;
+	padding-top: 24px;
+}
+#global #cuerpo #central_interior #col4 #parte_central #info_tours #foto_tours {
+	float: left;
+	height: 165px;
+	width: 192px;
+}
+#global #cuerpo #central_interior #col4 #parte_central #info_tours #info_tours {
+	float: left;
+	height: 165px;
+	width: 450px;
+}
+#global #cuerpo #central_interior #col4 #parte_central #info_tours #info_tours #tit_info_tours {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 14px;
+	font-weight: bold;
+	color: #D444AD;
+	text-align: left;
+	width: 430px;
+	margin-left: 10px;
+	margin-top: 20px;
+}
+#global #cuerpo #central_interior #col4 #parte_central #info_tours #info_tours #texto_info_tours {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 12px;
+	color: #333333;
+	text-align: justify;
+	width: 418px;
+	margin-left: 10px;
+	margin-top: 12px;
+}
+#global #cuerpo #central_interior #col4 #parte_central #info_tours #info_tours #leer_mas {
+	float: left;
+	height: 52px;
+	width: 440px;
+	text-align: right;
+}

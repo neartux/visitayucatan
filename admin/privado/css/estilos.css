@@ -1,0 +1,1244 @@
+body {
+	font-family: Arial;
+	overflow: hidden;
+	font-size: 13px;
+}
+button{
+	border: none;
+	cursor: pointer;
+	outline: none;
+}
+.pointer{
+	cursor: pointer;
+}
+.oswaldo{
+	font-family: oswald, Arial;
+}
+* {
+	margin: 0;
+	padding: 0;
+}
+.scroll-x{
+	overflow-x: auto;
+}
+img {
+	border: none;
+}
+.scrollmanual{
+	overflow-y: auto;
+}
+input, textarea {
+	outline: none;
+}
+textarea {
+	resize: none;
+}
+.mtop{
+	margin-top: 10px;
+}
+.mbottom{
+	margin-bottom: 10px;
+}
+a {
+	text-decoration: none;
+}
+.oculto {
+	display: none;
+}
+.alerta {
+	background: #FFFFA5;
+}
+.clear{
+	clear: left;
+}
+div, header, section{
+	box-sizing: border-box;
+}
+header{
+	background: url("../../../imagenes/header.png")top center no-repeat;
+	height: 162px;
+	width: 100%;
+	float: left;
+	position: relative;
+	z-index: 999;	
+}
+.mleft{
+	margin-left: 5px;
+}
+.center{
+	width: 980px;
+	z-index: 100;
+	float: left;
+	position: relative;
+	left: 50%;
+	margin-left: -490px;
+	
+}
+#logo{
+	float: left;
+	margin: 18px 0 0 32px;	
+}
+nav{
+	float: left;
+	width: 649px;
+	margin: 0 0 0 35px;	
+	margin-top: 51px;
+	font-family: 'Oswald', Arial;
+	font-weight: 400; 
+	font-size: 16px;
+}
+nav ul{
+	float: left;
+	width: 100%;
+	margin-top: -30px;
+	height: 55px;
+}
+nav ul li{
+	float: left;
+	list-style: none;
+	text-transform: uppercase;
+	width: 105px;
+	text-align: center;
+	height: 20px;
+	margin-top: 30px;
+}
+nav ul li:hover ul{
+	display: block;
+}
+nav ul li span{
+	color: #000;
+	display: table-cell;
+	vertical-align: bottom;
+	cursor: pointer;
+}
+nav li ul{
+	display: none;
+	margin-top: 0;
+	background: #fff;
+	height: auto !important;
+}
+nav li ul li{
+	height: 30px;
+	clear: left;
+	margin-top: 0;	
+	text-align: center;
+}
+nav li ul li span{
+	margin-top: 5px;
+	text-align: center;
+	float: left;	
+}
+nav li ul li:hover{
+	background: #ccc;
+}
+.navCurrent{
+	border-bottom: 1px solid #D12420;
+}
+#contenedor{	
+	float: left;
+	width: 100%;	
+	position: relative;
+}
+#loading{
+	display: none;
+	z-index: 999;
+	width: 48px;
+	height: 48px;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	margin-top: -24px;
+	margin-left: -24px;	
+}
+#loadingb{
+	z-index: 999;
+	width: 48px;
+	height: 48px;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	margin-top: -24px;
+	margin-left: -24px;	
+}
+#loader{	
+	width: 100%;
+	height: 100%;
+	position: absolute;	
+}
+#tablaRegistros{
+	width: 100%;
+}
+#tablaRegistros thead{
+	background: #666;
+	color: #fff;
+}
+#tablaRegistros tbody tr:hover{
+	background: #ccc;
+	color: #fff;
+}
+#botones{
+	width: 100%;
+	float: left;
+	margin-bottom: 10px;
+}
+.agregarAlgo{
+	background: #E60094;
+	color: #fff;	
+	float: left;	
+	padding: 6px 15px;
+	cursor: pointer;	
+}
+.agregarAlgo:hover{
+	background: #B5BA06;	
+}
+.btnSaveTraducciones{
+	position: absolute;
+	top: 10px;
+	right: 10px;	
+}
+.icon{
+	float: left;
+	margin-right: 10px;
+	cursor: pointer;	
+}
+#mensajes{
+	background: #D12420;
+	width: 100%;
+	position: fixed;
+	bottom: -45px;
+	z-index: 999;
+	height: 40px;
+	display: table;
+	text-align: center;
+}
+#mensajes p{
+	font-family: oswald;
+	font-size: 20px;
+	color: #fff;
+	display: table-cell;
+	vertical-align: middle;
+}
+.popup{
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	display: none;	
+}
+.oscuro{
+	background: rgba(0,0,0,0.5);
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	z-index: 1000;
+}
+.cajaCentral{
+	padding: 15px;
+}
+#contenedorPral{
+	position: absolute;
+	top: -100%;
+	left: 50%;
+	z-index: 1001;
+	background: #fff;
+	width: 248px;
+        height: 340px !important;
+	margin-top: -150px;
+	margin-left: -124px;	
+}
+.imgsalir{
+	position: absolute;
+	cursor: pointer;
+	right: -18px;
+	top: -18px;
+}
+.formageneral{
+	
+}
+.formageneral label{
+	float: left;
+	width: 100%;	
+}
+.formageneral input{
+	float: left;
+	clear: left;
+	width: 213px;
+	margin-bottom: 12px;
+}
+.formageneral select{
+	float: left;
+	clear: left;
+	margin-bottom: 12px;
+	width: 213px;		
+}
+#decoracionRosa{
+	background: #E60094;
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 8px;
+}
+.btnFormas{
+	position: absolute;
+	bottom: 10px;
+	right: 10px;	
+}
+#submenu{
+	float: left;
+	width: 100%;	
+}
+#submenu ul{
+	width: 100%;
+}
+#submenu li.menuActivo{
+	background: #00B0C7;
+}
+#submenu li:hover{
+	background: #00B0C7;
+}
+#submenu li{
+	background: #666;
+	float: left;
+	width: 150px;
+	margin-right: 1px;
+	height: 41px;
+	border-radius: 10px 10px 0 0;
+	display: table;
+	text-align: center;
+	cursor: pointer;
+}
+#submenu li span{
+	display: table-cell;
+	vertical-align: middle;
+	color: #fff;
+	font-family: oswald;
+	font-size: 16px;	
+}
+#reload{
+	border: 1px solid #00B0C7;
+	float: left;
+	width: 100%;
+	height: 187px;
+}
+.panelInfo{
+	float: left;
+	width: 100%;
+	height: 100%;
+	position: relative;	
+}
+#menuLeft, #menuRight, #menuRightb, #menuItinerarios, #menuLeftHabitaciones{
+	position: absolute;
+	width: 150px;
+	margin-top: 20px;
+	display: none;
+	right: 0;
+	top: 40px;
+	z-index: 999;
+}
+#menuLeft li, #menuRight li, #menuRightb li, #menuItinerarios li, #menuLeftHabitaciones li{
+	width: 100%;
+	list-style: none;
+	height: 35px;
+	color: #fff;
+	text-align: left;
+	padding-left: 20px;
+	box-sizing: border-box;
+	display: table;
+	cursor: pointer;
+	background: #ccc;
+}
+#menuLeft li:hover, #menuRight li:hover, #menuItinerarios li:hover, #menuLeftHabitaciones li:hover, #menuRightb li:hover{
+	background: #00B0C7;
+}
+#menuLeft li span, #menuRight li span, #menuItinerarios li span, #menuLeftHabitaciones li span, #menuRightb li span{
+	vertical-align: middle;
+	display: table-cell;
+}
+#menuLeft li.idiomaActivo, #menuRight li.nocheActiva, #menuItinerarios li.itinerarioactivo, #menuLeftHabitaciones li.menuhabactivo, #menuRightb li.hospedajeactivo{
+	background: #00B0C7;
+}
+.menuContenido{
+	float: left;
+	position: relative;
+	width: 100%;
+	height: 100%;
+	padding: 10px 0 0 50px;	
+}
+.descripIdiomas{
+	position: relative;
+	width: 100%;
+	height: 100%;	
+}
+.descripIdiomas label{
+	float: left;
+	clear: left;
+	font-size: 16px;
+	width: 100%;
+	font-weight: bold;	
+}
+.descripIdiomas input{
+	float: left;
+	width: 400px;
+	clear: left;
+	margin-bottom: 20px;	
+}
+.descripIdiomas textarea{
+	float: left;
+	width: 400px;
+	clear: left;
+	margin-bottom: 20px;	
+}
+.tituloIdioma{
+	float: left;
+	clear: left;
+	color: #00B0C7;
+	margin-bottom: 10px;
+}
+.filaHotel{
+	float: left;
+	width: 353px;
+	border: 1px solid #ccc;
+	margin: 10px 10px;
+	padding: 10px;
+	height: 240px;
+	position: relative;
+}
+.division{
+	float: left;
+	margin-right: 15px;
+}
+.division label{
+	float: left;
+	clear: left;
+	width: 117px;	
+}
+.division input{
+	float: left;
+	clear: left;
+	margin-bottom: 10px;
+	width: 150px;	
+}
+.division select{
+	float: left;
+	margin-bottom: 10px;
+	clear: left;
+	width: 150px;	
+}
+.btnEspecial{
+	float: right;
+	margin: 0 15px 0 0;
+}
+.loadingcombinacion{
+	position: absolute;
+	display: none;
+	width: 100%;
+	height: 100%;
+	background: rgba(0,0,0,0.5);
+	top: 0;
+	left: 0;	
+}
+.loadingcombinacion img{
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	margin-top: -24px;
+	margin-left: -24px;
+}
+.filabotones{
+	float: left;
+	width: 100%;	
+}
+.btnSaveDescripciones{
+    background: #B5BA06;
+    position: absolute;
+    z-index: 999;
+    top: -1px;
+    right: 6px;	
+}
+.btnSavePageDescripciones{
+	background: #B5BA06;
+	position: absolute;
+	bottom: 10px;
+	right: 10px;
+}
+.lbltop{
+	margin-top: 35px;
+}
+.flotis{
+	float: left;
+	width: 100%;
+	clear: left;
+	height: 1px;
+}
+.logoff{
+	position: absolute;
+	top: 0;
+	right: 0;
+}
+#imgBanner{
+	float: left;
+}
+.lagaleria{
+	float: left; 
+	width: 100%;
+	margin-top: 20px;	
+}
+.objectfile{
+	border: 1px solid #ccc;
+	position: relative;
+	width: 102px;
+	height: 102px;
+	margin: 0 18px 5px 0;
+	float: left;	
+}
+.deleteImg{
+	position: absolute;
+	background: url("../imagenes/fancybox_sprite.png") no-repeat;
+	width: 39px;
+	height: 36px;
+	cursor: pointer;
+	top: -17px;
+	right: -19px;
+}
+.objectfile img{
+	width: 100px;
+	max-height: 100%;
+}
+.subefile{
+	float: left;
+	width: 100%;		
+}	
+.subefile h2{
+	font-weight: normal;
+	margin: 15px 0;
+}
+.imgpral{
+	position: absolute;
+	width: 17px !important;
+	height: 15px !important;
+	left: 0;
+	top: -16px;
+}
+.portaimgbanner{
+	float: left;
+	position: relative;
+}
+#origenes{
+	position: relative;
+}
+.precioOrigenes{
+	float: left;
+	border: 1px solid #ccc;
+	width: 250px;
+	padding: 10px;
+	height: 190px;
+	margin: 15px;	
+	position: relative;
+}
+.precioOrigenes label{
+	float: left;
+	width: 100%;
+}
+.precioOrigenes select{
+	float: left;
+	margin-bottom: 10px;
+	width: 222px;
+}
+.precioOrigenes input{
+	width: 222px;
+	margin-bottom: 10px;	
+}
+.flechaabajo{
+	float: left;
+	width: 16px;	
+	cursor: pointer;
+}
+.flechaarriba{
+	float: right;
+	width: 16px;
+	cursor: pointer;	
+}
+.portalugares{
+	float: left;
+	width: 40px;	
+}
+.seccionesinput{
+	float: left;
+}
+.seccionesinput label{
+	font-weight: normal !important;
+	clear: none !important;
+	width: auto !important;		
+}
+.seccionesinput input{
+	clear: none !important;
+	width: 22px !important;
+	margin-top: 3px;
+	margin-right: 20px !important;	
+}
+.cajadivisora{
+	float: left;
+	width: 450px;
+	margin-right: 30px;	
+}
+.cajadivisorab{
+	float: left;
+	width: 450px;
+	min-height: 300px;
+}
+.cajadivisorab h2{
+	width: 100%;
+	text-align: left;
+	margin: 5px 0 0 5px;
+}
+.cajadivisorab ul{
+	float: left;
+	width: 100%;	
+	margin-top: 10px;
+}
+.cajadivisorab li.currentseccion{
+	background: #E9AC1A;
+}
+.cajadivisorab li:hover{
+	background: #E9AC1A;
+}
+.cajadivisorab li{
+	background: #CCC;
+	float: left;
+	width: 124px;
+	height: 40px;
+	border-radius: 10px 10px 0 0;
+	display: table;	
+	cursor: pointer;
+}
+.cajadivisorab li span{
+	vertical-align: middle;
+	display: table-cell;
+	width: 100%;
+	text-align: center;
+	color: #fff;
+	font-size: 17px;	
+}
+#contenedorSecciones{
+	border: 1px solid #E9AC1A;
+	float: left;
+	position: relative;
+	width: 100%;
+	min-height: 300px;
+}
+.cajonmuestra{
+	
+}
+.cajonmuestra table{
+	width: 100%;
+	margin-top: 10px;
+}
+.cajonmuestra table thead tr{
+	background: #ccc;
+	height: 30px;
+}
+.tagsinput{
+	height: 100px !important; 
+	margin-bottom: 20px;
+}
+.sujetatags{
+	float: left;
+	width: 100%;
+	height: 25px;
+	margin-bottom: 20px;
+}
+.loadinglist{
+	margin-left: 10px;
+	display: none;
+}
+.superlabel{
+	margin: 10px 0 0 10px;
+}
+.supertext{
+	margin: 0 0 0 10px;
+	height: 230px;
+}
+.btnItinerarios{
+	background: #666;
+	float: left;
+	width: 100px;
+	margin-right: 1px;
+	color: #fff;
+	height: 22px;
+	display: table;
+	text-align: center;
+	cursor: pointer;	
+}
+.submenuitinerarios{
+	float: left;
+	width: 100%;
+	margin-top: 20px;	
+}
+.btnItinerarios.menuItiActivo{
+	background: #00B0C7;
+}
+.btnItinerarios:hover{
+	background: #00B0C7;
+}
+.cajondesitinerario{
+	
+}
+.tablaReservas tbody td{
+	text-align: center;
+	height: 30px;
+}
+
+
+/*DETALLE DE LA IMPRESION*/
+#voucher{
+	width: 400px;
+	float: left;
+	border: 1px solid #ccc;
+	padding: 10px;
+	margin-bottom: 20px;	
+	clear: left;
+}
+#voucher h3{
+	float: left;
+	width: 100%;
+	font-size: 16px;
+	margin-bottom: 10px;	
+}
+#voucher table{
+	width: 100%;
+}
+#voucher table tr{
+	width: 100%;
+	height: 20px;
+}
+.negrita{
+	font-weight: bold;
+}
+.azul{
+	color: #00B0C7;
+}
+#titulocompra{
+	font-size: 30px;
+	float: left;
+	width: 100%;
+	margin-top: 30px;
+	color: #00B0C7;
+	margin-bottom: 20px;	
+}
+.tituloTicket{
+	font-weight: bold;
+}
+.importevoucher{
+	text-align: center;
+	height: 50px;	
+}
+.imprimirvoucher{
+	cursor: pointer;
+}
+#detalleCompra{
+	width: 100%;
+	float: left;
+	border: 1px solid #ccc;
+	padding: 10px;
+	margin-bottom: 20px;	
+	clear: left;	
+}
+#detalleCompra h3{
+	float: left;
+	width: 100%;
+	font-size: 16px;
+	margin-bottom: 10px;		
+}
+#detalleCompra h3{
+	float: left;
+	width: 100%;
+	font-size: 16px;
+	margin-bottom: 10px;
+}
+#detalleCompra table{
+	width: 100%;
+}
+.tituloPagar{
+	float: right;
+	margin-right: 20px;
+	font-weight: bold;	
+}
+.encabezado{
+	background: #ccc;
+	height: 30px;	
+	font-weight: bold;
+}
+.totalpagar{
+	height: 40px;
+}
+.imprimeCompra{
+	float: right;
+	clear: left;
+	width: 160px;
+	cursor: pointer;
+	text-align: center;
+	height: 40px;
+	display: table;
+	background: #00B0C7;
+	border-radius: 10px 0 0 0;
+}
+.imprimeVoucher{
+	float: left;
+	clear: left;
+	width: 160px;
+	cursor: pointer;
+	text-align: center;
+	height: 40px;
+	display: table;
+	background: #00B0C7;
+	border-radius: 10px 0 0 0;
+	margin-left: 240px;
+}
+.imprimeCompra:hover, .imprimeVoucher:hover{
+	background: #017C8C;
+}
+.btnImprimirCompra, .btnImprimirVocuher{
+	display: table-cell;
+	vertical-align: middle;
+	color: #fff;	
+	font-weight: bold;
+}
+#resumendecompra{
+	float: left;
+	width: 100%;
+	margin-top: 30px;	
+}
+.divform h3{
+	color: #00B0C7;
+	float: left;
+	width: 100%;
+	font-size: 25px;
+	font-weight: normal;
+	margin-bottom: 10px;
+}
+.divform label{
+	float: left;
+	width: 100%;
+	font-weight: bold;	
+}
+.divform input{
+	float: left;
+	margin-bottom: 10px;
+	width: 220px;
+}
+#sureserva{
+	float: left;
+	width: 100%;
+}
+.seleccion{
+	float: left;
+	margin-bottom: 10px;	
+}
+.cajonform{
+	float: left;
+	/* border: 1px solid; */
+	width: 102px;
+	margin-right: 10px;
+}
+#procesando{
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	display: none;	
+}
+#contenidoprocesa{
+	position: absolute;
+	z-index: 999;
+	top: 50%;
+	left: 50%;
+	width: 250px;
+	margin-left: -125px;
+	height: 100px;
+	margin-top: -50px;	
+}
+#contenidoprocesa img{
+	position: relative;
+	left: 50%;
+	margin-left: -24px;	
+}
+#mensajeprocesa{
+	clear: left;
+	float: left;
+	text-align: center;
+	margin-top: 8px;
+	color: #fff;
+	font-size: 20px;	
+}
+.oscuro{
+	background: rgba(0,0,0,0.5);
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	z-index: 100;
+}
+#reservanow{
+	background: #017C8C;
+	color: #fff;
+	cursor: pointer;
+	border: none;
+	padding: 5px 10px;
+	float: left;
+	margin: 45px 0 0 0;
+	font-weight: bold;
+	font-size: 25px;
+	clear: left;
+}
+#reservanow:hover{
+	background: #015D6A;
+}
+.cajitaforma{
+	float: left;
+	width: 210px;
+	margin-right: 50px;
+	height: 250px;	
+}
+.eltotalapagar{
+	background: #E60094;
+	margin: 20px 0 0 0;
+	float: left;
+	padding: 2px 5px;
+	color: #fff;
+	font-size: 16px;	
+}
+#otrosdatos{
+	float: left;
+	width: 100%;	
+}
+#otrosdatos label{
+	float: left;
+	width: 100%;
+	font-weight: bold;	
+}
+#otrosdatos span{
+	float: left;
+	width: 100%;
+	margin-bottom: 20px;
+	font-size: 20px;	
+}
+.importante{
+	font-size: 15px !important;
+	color: #A00;
+	text-decoration: underline;	
+}
+#btnReenviarReserva{
+	margin-left: 5px;
+}
+.cajaIdioma{
+	float: left;
+	width: 100%;
+	margin-bottom: 10px;	
+}
+.cajaIdioma h2{
+	float: left;
+	width: 100%;
+	color: #666;
+	font-weight: normal;
+	font-size: 17px;	
+}
+.cajaDiccionario{
+	float: left;
+	width: 175px;
+	margin: 2px 0 0 5px;	
+}
+.primerdiccionario{
+	width: 225px !important;
+}
+.cajaDiccionario input{
+	float: left;
+	width: 100%;
+	clear: left;
+	margin-bottom: 2px;	
+	
+}
+.cajaDiccionario h2{
+	float: left;
+	width: 100%;
+	color: #666;
+	font-weight: normal;
+	font-size: 17px;	
+}
+.cajainfotel label{
+	float: left;
+	clear: left;	
+}
+.cajainfotel input{
+	float: left;
+	clear: left;
+	width: 250px;
+	margin-bottom: 15px;	
+}
+.cajainfotel select{
+	float: left;
+	clear: left;
+	width: 250px;
+	margin-bottom: 15px;	
+}
+.cajainfotel textarea{
+	float: left;
+	clear: left;
+	width: 250px;
+	height: 85px;
+	margin-bottom: 15px;	
+}
+#addcorreo {
+	background: #B5BA06;
+	color: #fff;
+	float: left;
+	padding: 6px 15px;
+	cursor: pointer;
+	margin: -7px 0 20px 20px;
+}
+#addcorreo:hover{
+	background: #E60094;	
+}
+.guardaInfotel{
+	position: absolute;
+	top: 0;
+	right: 0;	
+}
+#contenedorCorreos{
+	float: left;
+	clear: left;
+}
+.filaCorreos{
+	float: left;
+	clear: left;
+}
+.filaCorreos label{
+	clear: none !important;
+}
+.filaCorreos input{
+	clear: none !important;
+	margin-left: 10px;
+	margin-right: 40px;	
+}
+.formulario{
+	float: left;
+	margin: 10px 0 0 10px;	
+}
+.addfechacierre{
+	margin: 10px 0 0 0;
+}
+.portafotos{
+	border: 1px solid #ccc;
+	float: left;
+	width: 150px;
+	height: 150px;
+	position: relative;
+	padding: 5px;
+	margin: 5px;	
+}
+.portafotos img{
+	width: 100%;
+	height: 100%;	
+}
+#uploadfoto{
+	float: left;
+	width: 100%;
+	min-height: 50px;
+	margin: 10px 0;	
+}
+#addcontrato{
+	border-bottom: 1px solid #ccc;
+	width: 100%;
+	float: left;
+	padding-left: 8px;
+	margin-top: 6px;
+	padding-bottom: 8px;		
+}
+.listcontrato{
+	background: #666;
+	padding: 0 10px;
+	color: #fff;
+	min-width: 100px;
+	height: 25px;
+	float: left;
+	margin-right: 10px;
+	text-align: center;	
+}
+.listcontrato:hover{
+	background: #00B0C7;
+}
+#btnaddcontrato, #btnaddtarifa{
+	background: #666;
+	color: #fff;
+	padding: 0 23px;
+	height: 25px;
+	float: left;
+	margin-right: 10px;
+	text-align: center;
+}
+#btnaddcontrato:hover{
+	background: #00B0C7;	
+}
+.ocultarcontrato, .ocultartarifa, .ocultarsubcajon{
+	display: none;
+	width: 100%;
+	float: left;
+	margin-top: 10px;	
+}
+.currentcontrato, .currenttarifa, .currentroomtarifa{
+	font-weight: bold;
+	border-bottom: 3px solid #00B0C7;	
+}
+.contratoactivo, .tarifaactiva, .roomtarifaactiva{
+	display: block;
+}
+.ocultarcontrato label, .ocultarhabitacion label, .ocultartarifa label, .ocultarsubcajon label{
+	float: left;
+	clear: left;
+	margin-left: 5px;	
+}
+.ocultarhabitacion textarea{
+	float: left;
+	clear: left;
+	margin-left: 5px;	
+}
+.ocultarcontrato input[type="text"], .ocultarhabitacion input[type="text"], .ocultartarifa input[type="text"], .ocultarsubcajon input[type="text"]{
+	float: left;
+	clear: left;
+	margin: 0 0 10px 5px;
+	width: 170px;	
+}
+.ocultarcontrato input[type="checkbox"], .ocultarhabitacion input[type="checkbox"], .ocultartarifa input[type="checkbox"], .ocultarsubcajon input[type="checkbox"]{
+	float: left;
+	clear: left;
+	margin: 0 0 10px 5px;
+}
+.ocultarcontrato select, .ocultarhabitacion select, .ocultartarifa select, .ocultarsubcajon select{
+	float: left;
+	clear: left;
+	margin: 0 0 10px 5px;
+	width: 170px;		
+}
+.containerform{
+	float: left;
+	margin-right: 50px;	
+}
+#addhabitacion{
+	border-bottom: 1px solid #ccc;
+	width: 100%;
+	float: left;
+	padding-left: 8px;
+	margin-top: 6px;
+	padding-bottom: 8px;		
+}
+.ocultarhabitacion{
+	display: none;
+	width: 100%;
+	float: left;
+	margin-top: 10px;
+	height: 86%;
+	position: absolute;
+	top: 33px;
+	overflow-x: scroll;			
+}
+.currenthabitacion{
+	font-weight: bold;
+	border-bottom: 3px solid #00B0C7;	
+}
+.habitacionactiva{
+	display: block;
+}
+#btnaddhabitacion{
+	background: #666;
+	color: #fff;
+	width: 100px;
+	height: 25px;
+	float: left;
+	margin-right: 10px;
+	text-align: center;
+}
+#btnaddhabitacion:hover{
+	background: #00B0C7;	
+}
+.mceLayout{
+	margin-left: 5px;
+}
+.containerform h2{
+	color: #00B0C7;
+	margin-left: 5px;
+	margin-bottom: 10px;	
+}
+#roomstarifas{
+	float: left;
+	width: 100%;
+	margin-bottom: 5px;	
+	padding-left: 8px;
+	margin-top: 6px;
+	padding-bottom: 8px;	
+}
+#labandera{
+  float: left;  
+  width: 100%;
+  height: 25px;	
+}
+#labandera img{
+  height: 25px;
+}
+#lbldescripcion{
+    float: left;
+    margin: 10px 0 0 16px;	
+}
+.cajondescripcion{
+    width: 99%;
+    height: 300px;
+    float: left;
+    clear: left;
+    margin: 0 0 0 16px;
+}
+.cajonselector{
+    border: 1px solid #ccc;
+    float: left;
+    padding: 10px 20px;
+    margin: 15px 0 0 15px;	
+}
+#ladescripcionhabitacion{
+    float: left;
+    width: 100%;
+    min-height: 300px;
+    position: relative;	
+}
+.cajapromocionar{
+    width: 18px;
+    height: 16px;	
+}
+.textcenter{
+	text-align: center;
+}
+#paginacion{
+    float: left;
+    width: 100%;
+    margin-top: 50px;	
+}
+.pagina{
+    float: right;
+    margin: 0 10px;
+    text-align: center;
+    display: table;
+    background: #666;
+    width: 30px;
+    height: 30px;
+    border-radius: 20px;
+    cursor: pointer;
+}
+.pagina:hover{
+	background: #00B0C7;
+}
+.pagina.activa{
+	background: #00B0C7;
+}
+.pagina span{
+    color: #fff;
+    display: table-cell;
+    vertical-align: middle;
+}

@@ -1,0 +1,21 @@
+RewriteEngine On
+Options -Indexes
+RewriteCond %{HTTPS} off
+#RewriteCond %{HTTP_HOST} !^www\.localhost\.com [NC]
+RewriteCond %{HTTP_HOST} !^$
+#RewriteRule ^(.*) http://localhost/$1 [L,R=301]
+
+RewriteRule ^tours-en-yucatan/(.+)/(.+)/(.+)/$ detalle-tour.php?idtour=$2&lang=$3
+RewriteRule ^paseos-en-yucatan/(.+)/(.+)/(.+)/$ detalle-paquete.php?idpaquete=$2&lang=$3
+RewriteRule ^hoteles-en-yucatan/(.+)/(.+)/(.+)/$ detalle-hotel.php?idhotel=$2&lang=$3
+RewriteRule ^hoteles-en/(.+)/(.+)/(.+)/$ hoteles-en.php?iddestino=$2&lang=$3
+RewriteRule ^hoteles-en-new/(.+)/(.+)/(.+)/$ hoteles-en-new.php?iddestino=$2&lang=$3
+RewriteRule ^grupos/(.+)/(.+)/(.+)/$ hoteles-en.php?iddestino=$2&lang=$3
+
+RewriteRule ^paseos-en-yucatan-new/(.+)/(.+)/(.+)/$ detalle-paquete-new.php?idpaquete=$2&lang=$3
+RewriteRule ^tours-en-yucatan-new/(.+)/(.+)/(.+)/$ detalle-tour-new.php?idtour=$2&lang=$3
+RewriteRule ^hoteles-en-yucatan-new/(.+)/(.+)/(.+)/$ detalle-hotel-new.php?idhotel=$2&lang=$3
+
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteCond %{REQUEST_FILENAME}\.php -f
+RewriteRule ^(.*)$ $1.php

@@ -1,0 +1,242 @@
+#logoimg{
+	
+}
+#voucher{
+	width: 400px;
+	float: left;
+	border: 1px solid #ccc;
+	padding: 10px;
+	margin-bottom: 20px;	
+	clear: left;
+}
+#voucher h3{
+	float: left;
+	width: 100%;
+	font-size: 16px;
+	margin-bottom: 10px;	
+}
+#voucher table{
+	width: 100%;
+}
+#voucher table tr{
+	width: 100%;
+	height: 20px;
+}
+.negrita{
+	font-weight: bold;
+}
+.azul{
+	color: #00B0C7;
+}
+#titulocompra{
+	font-size: 30px;
+	float: left;
+	width: 100%;
+	margin-top: 30px;
+	color: #00B0C7;
+	margin-bottom: 20px;	
+}
+.tituloTicket{
+	font-weight: bold;
+}
+.importevoucher{
+	text-align: center;
+	height: 50px;	
+}
+.imprimirvoucher{
+	cursor: pointer;
+}
+#detalleCompra{
+	width: 100%;
+	float: left;
+	border: 1px solid #ccc;
+	padding: 10px;
+	margin-bottom: 20px;	
+	clear: left;	
+}
+#detalleCompra h3{
+	float: left;
+	width: 100%;
+	font-size: 16px;
+	margin-bottom: 10px;		
+}
+#detalleCompra h3{
+	float: left;
+	width: 100%;
+	font-size: 16px;
+	margin-bottom: 10px;
+}
+#detalleCompra table{
+	width: 100%;
+}
+.tituloPagar{
+	float: right;
+	margin-right: 20px;
+	font-weight: bold;	
+}
+.encabezado{
+	background: #ccc;
+	height: 30px;	
+	font-weight: bold;
+}
+.totalpagar{
+	height: 40px;
+}
+.imprimeCompra{
+	float: right;
+	clear: left;
+	width: 160px;
+	cursor: pointer;
+	text-align: center;
+	height: 40px;
+	display: table;
+	background: #00B0C7;
+	border-radius: 10px 0 0 0;
+}
+.imprimeVoucher{
+	float: left;
+	clear: left;
+	width: 160px;
+	cursor: pointer;
+	text-align: center;
+	height: 40px;
+	display: table;
+	background: #00B0C7;
+	border-radius: 10px 0 0 0;
+	margin-left: 240px;
+}
+.imprimeCompra:hover, .imprimeVoucher:hover{
+	background: #017C8C;
+}
+.btnImprimirCompra, .btnImprimirVocuher{
+	display: table-cell;
+	vertical-align: middle;
+	color: #fff;	
+	font-weight: bold;
+}
+#resumendecompra{
+	float: left;
+	width: 100%;
+	margin-top: 30px;	
+}
+.divform h3{
+	color: #00B0C7;
+	float: left;
+	width: 100%;
+	font-size: 25px;
+	font-weight: normal;
+	margin-bottom: 10px;
+}
+.divform label{
+	float: left;
+	width: 100%;
+	font-weight: bold;	
+}
+.divform input{
+	float: left;
+	margin-bottom: 10px;
+	width: 220px;
+}
+#sureserva{
+	float: left;
+	width: 100%;
+}
+.seleccion{
+	float: left;
+	margin-bottom: 10px;	
+}
+.cajonform{
+	float: left;
+	/* border: 1px solid; */
+	width: 102px;
+	margin-right: 10px;
+}
+#procesando{
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	display: none;	
+}
+#contenidoprocesa{
+	position: absolute;
+	z-index: 999;
+	top: 50%;
+	left: 50%;
+	width: 250px;
+	margin-left: -125px;
+	height: 100px;
+	margin-top: -50px;	
+}
+#contenidoprocesa img{
+	position: relative;
+	left: 50%;
+	margin-left: -24px;	
+}
+#mensajeprocesa{
+	clear: left;
+	float: left;
+	text-align: center;
+	margin-top: 8px;
+	color: #fff;
+	font-size: 20px;	
+}
+.oscuro{
+	background: rgba(0,0,0,0.5);
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	z-index: 100;
+}
+#reservanow{
+	background: #017C8C;
+	color: #fff;
+	cursor: pointer;
+	border: none;
+	padding: 5px 10px;
+	float: left;
+	margin: 45px 0 0 0;
+	font-weight: bold;
+	font-size: 25px;
+	clear: left;
+}
+#reservanow:hover{
+	background: #015D6A;
+}
+.cajitaforma{
+	float: left;
+	width: 210px;
+	margin-right: 50px;
+	height: 250px;	
+}
+.eltotalapagar{
+	background: #E60094;
+	margin: 20px 0 0 0;
+	float: left;
+	padding: 2px 5px;
+	color: #fff;
+	font-size: 16px;	
+}
+#otrosdatos{
+	float: left;
+	width: 100%;	
+}
+#otrosdatos label{
+	float: left;
+	width: 100%;
+	font-weight: bold;	
+}
+#otrosdatos span{
+	float: left;
+	width: 100%;
+	margin-bottom: 20px;
+	font-size: 20px;	
+}
+.importante{
+	font-size: 15px !important;
+	color: #A00;
+	text-decoration: underline;	
+}
